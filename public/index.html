@@ -238,11 +238,14 @@ input::placeholder { color: #888888; }
         <sc-if value="{{ heroFormOpen }}" hint-placeholder-val="{{ false }}">
           <form onsubmit="{{ submitHero }}" style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 460px;">
             <input type="email" required="" autofocus="" name="email" value="{{ email }}" onchange="{{ onEmail }}" placeholder="Email" aria-label="Email" style="flex: 1 1 220px; height: 52px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; outline: none;">
-            <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; cursor: pointer;" style-hover="background: #1B0FAE;">{{ heroFormLabel }}</button>
+            <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; cursor: pointer;" style-hover="background: #1B0FAE;">Join →</button>
           </form>
         </sc-if>
         <sc-if value="{{ heroFormClosed }}" hint-placeholder-val="{{ true }}">
           <button onclick="{{ openHeroForm }}" style="height: 56px; padding: 0 32px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 17px; cursor: pointer;" style-hover="background: #1B0FAE;">Join the private beta →</button>
+        </sc-if>
+        <sc-if value="{{ heroDoneShown }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; align-items: center; height: 56px; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 17px; color: #FFFFFF;">✓&nbsp; You’re on the list — we’ll be in touch.</div>
         </sc-if>
       </div>
 
@@ -348,11 +351,14 @@ input::placeholder { color: #888888; }
       <sc-if value="{{ closeFormOpen }}" hint-placeholder-val="{{ false }}">
         <form onsubmit="{{ submitClose }}" style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 460px; margin: 0 auto; justify-content: center;">
           <input type="email" required="" autofocus="" name="email" value="{{ email }}" onchange="{{ onEmail }}" placeholder="Email" aria-label="Email" style="flex: 1 1 220px; height: 52px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; outline: none;">
-          <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; cursor: pointer;" style-hover="background: #1B0FAE;">{{ closeFormLabel }}</button>
+          <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; cursor: pointer;" style-hover="background: #1B0FAE;">Join →</button>
         </form>
       </sc-if>
       <sc-if value="{{ closeFormClosed }}" hint-placeholder-val="{{ true }}">
         <button onclick="{{ openCloseForm }}" style="height: 56px; padding: 0 32px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 17px; cursor: pointer;" style-hover="background: #1B0FAE;">Join the private beta →</button>
+      </sc-if>
+      <sc-if value="{{ closeDoneShown }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; align-items: center; justify-content: center; height: 56px; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 17px; color: #FFFFFF;">✓&nbsp; You’re on the list — we’ll be in touch.</div>
       </sc-if>
       <div style="margin-top: clamp(90px, 12vw, 150px); font-size: 15px; color: rgba(255,255,255,0.55);">re:verse. Live by your own rules.</div>
     </div>
@@ -404,7 +410,7 @@ class Component extends DCLogic {
         body: JSON.stringify({ email, source })
       });
       if (!r.ok) throw new Error('subscribe failed: ' + r.status);
-      this.setState({ [doneKey]: true });
+      this.setState({ [doneKey]: true, email: '' });
     } catch (err) {
       console.error(err);
       alert('Something went wrong. Please try again.');
@@ -430,15 +436,15 @@ class Component extends DCLogic {
       email: s.email,
       onEmail: (e) => this.setState({ email: e.target.value }),
 
-      heroFormOpen: s.heroForm,
-      heroFormClosed: !s.heroForm,
-      heroFormLabel: s.heroDone ? 'You’re on the list' : 'Join →',
+      heroFormOpen: s.heroForm && !s.heroDone,
+      heroFormClosed: !s.heroForm && !s.heroDone,
+      heroDoneShown: s.heroDone,
       openHeroForm: () => this.setState({ heroForm: true }),
       submitHero: (e) => this.submitLead(e, 'hero', 'heroDone'),
 
-      closeFormOpen: s.closeForm,
-      closeFormClosed: !s.closeForm,
-      closeFormLabel: s.closeDone ? 'You’re on the list' : 'Join →',
+      closeFormOpen: s.closeForm && !s.closeDone,
+      closeFormClosed: !s.closeForm && !s.closeDone,
+      closeDoneShown: s.closeDone,
       openCloseForm: () => this.setState({ closeForm: true }),
       submitClose: (e) => this.submitLead(e, 'closing', 'closeDone'),
 

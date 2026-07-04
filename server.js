@@ -24,6 +24,26 @@ const ready = pool
   : null;
 if (ready) ready.catch((err) => console.error('DB init failed:', err));
 
+// Шлёт новый лид в Telegram-чат, если заданы секреты TELEGRAM_BOT_TOKEN и TELEGRAM_CHAT_ID
+async function notifyTelegram(email, source) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) return;
+  try {
+    const r = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: `🆕 Лид re:verse\n${email}\nформа: ${source || '—'}`,
+      }),
+    });
+    if (!r.ok) console.error('telegram notify failed:', r.status, await r.text());
+  } catch (err) {
+    console.error('telegram notify failed:', err);
+  }
+}
+
 app.post('/api/subscribe', async (req, res) => {
   if (!pool) return res.status(503).json({ error: 'db_not_configured' });
 
@@ -35,10 +55,12 @@ app.post('/api/subscribe', async (req, res) => {
 
   try {
     await ready;
-    await pool.query(
-      'INSERT INTO leads (email, source) VALUES ($1, $2) ON CONFLICT (email) DO NOTHING',
+    const result = await pool.query(
+      'INSERT INTO leads (email, source) VALUES ($1, $2) ON CONFLICT (email) DO NOTHING RETURNING id',
       [email, source]
     );
+    // уведомляем только о действительно новых email, ответ юзеру не задерживаем
+    if (result.rowCount > 0) notifyTelegram(email, source);
     res.json({ ok: true });
   } catch (err) {
     console.error('subscribe failed:', err);

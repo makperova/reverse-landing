@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>re:verse — Take money admin off your plate</title>
+<script src="assets/asset01.js"></script>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset02.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset03.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset04.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset02.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset03.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset04.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset07.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset08.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset09.woff2") format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset10.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset11.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/asset12.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset07.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset08.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset09.woff2") format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset10.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset11.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/asset12.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+html, body { margin: 0; padding: 0; background: #0D0D0D; }
+* { box-sizing: border-box; }
+input::placeholder { color: #888888; }
+@keyframes rvRise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes rvDrift { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-4%, 3%) scale(1.08); } 100% { transform: translate(0, 0) scale(1); } }
+</style>
+</helmet>
+
+<div style="font-family: 'Geist', Inter, system-ui, sans-serif; background: #EDEDED; color: #0D0D0D; font-weight: 400; -webkit-font-smoothing: antialiased;">
+
+  <!-- ============ 1. HERO — dark ============ -->
+  <section data-screen-label="Hero" style="position: relative; background: #0D0D0D; color: #FFFFFF; overflow: hidden;">
+    <div aria-hidden="true" style="position: absolute; right: -18%; bottom: -42%; width: 78%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, #FFFFFF 0%, rgba(190,170,255,{{ glowMid }}) 18%, rgba(21,10,137,{{ glowLow }}) 46%, rgba(0,192,232,0.10) 62%, rgba(13,13,13,0) 72%); filter: blur(60px); pointer-events: none; animation: {{ driftAnim }};"></div>
+    <div aria-hidden="true" style="position: absolute; left: -22%; top: -30%; width: 52%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(21,10,137,{{ glowFaint }}) 0%, rgba(13,13,13,0) 68%); filter: blur(70px); pointer-events: none;"></div>
+
+    <header style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 28px 24px 0 24px; display: flex; align-items: center;">
+      <img src="assets/asset00.png" alt="re:verse" style="height: 26px; width: auto; display: block;">
+    </header>
+
+    <div style="position: relative; z-index: 2; max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px;">
+      <div style="flex: 1 1 480px; min-width: 300px;">
+        <h1 style="margin: 0 0 28px 0; font-weight: 400; font-size: clamp(42px, 6.2vw, 80px); line-height: 1.03; letter-spacing: -0.03em; text-wrap: pretty;">Take money admin off your plate.</h1>
+        <p style="margin: 0 0 16px 0; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.5; color: rgba(255,255,255,0.78); max-width: 34em; text-wrap: pretty;">re:verse is your AI money agent for spending plans, savings, bills and currency moves across your accounts, cards and stablecoins.</p>
+        <p style="margin: 0 0 40px 0; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.5; color: #FFFFFF; max-width: 34em;">It prepares the next move. You approve before anything happens.</p>
+        <sc-if value="{{ heroFormOpen }}" hint-placeholder-val="{{ false }}">
+          <form onsubmit="{{ submitHero }}" style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 460px;">
+            <input type="email" required="" autofocus="" name="email" value="{{ email }}" onchange="{{ onEmail }}" placeholder="Email" aria-label="Email" style="flex: 1 1 220px; height: 52px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; outline: none;">
+            <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; cursor: pointer;" style-hover="background: #1B0FAE;">{{ heroFormLabel }}</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ heroFormClosed }}" hint-placeholder-val="{{ true }}">
+          <button onclick="{{ openHeroForm }}" style="height: 56px; padding: 0 32px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 17px; cursor: pointer;" style-hover="background: #1B0FAE;">Join the private beta →</button>
+        </sc-if>
+      </div>
+
+      <div style="flex: 0 1 360px; min-width: 300px; animation: rvRise 700ms cubic-bezier(0.22,0.8,0.3,1) both; animation-delay: 250ms;">
+        <div style="background: #1A1A1A; border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 20px; width: 100%; max-width: 340px; box-shadow: 0 24px 80px rgba(0,0,0,0.45);">
+          <div style="font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 14px;">Upcoming</div>
+          <div style="font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 6px;">Rent due in 5 days.</div>
+          <div style="font-size: 18px; color: #FFFFFF; line-height: 1.35; margin-bottom: 10px;">Move <span style="font-family: 'Geist Mono', monospace;">€1,200</span> to Rent Reserve.</div>
+          <div style="font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 18px;">Balance after move: <span style="font-family: 'Geist Mono', monospace;">€1,850</span></div>
+          <div style="display: flex; gap: 8px;">
+            <div style="height: 34px; padding: 0 18px; display: inline-flex; align-items: center; border-radius: 999px; background: #150A89; color: #FFFFFF; font-size: 13px;">Approve</div>
+            <div style="height: 34px; padding: 0 18px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); font-size: 13px;">Edit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. TIME — light ============ -->
+  <section data-screen-label="Time" style="background: #EDEDED; padding: clamp(88px, 12vw, 160px) 24px;">
+    <div data-reveal="true" style="max-width: 880px; margin: 0 auto;">
+      <h2 style="margin: 0 0 32px 0; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em; text-wrap: pretty;">Your bank gave you tools. re:verse gives you time.</h2>
+      <p style="margin: 0 0 14px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">Balances, bills, subscriptions, savings, transfers — your apps show them. re:verse acts on them.</p>
+      <p style="margin: 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #0D0D0D;">You stop being the one who has to remember.</p>
+    </div>
+  </section>
+
+  <!-- ============ 3. PREVENTION — light ============ -->
+  <section data-screen-label="Prevention" style="background: #EDEDED; padding: 0 24px clamp(88px, 12vw, 160px) 24px;">
+    <div data-reveal="true" style="max-width: 880px; margin: 0 auto;">
+      <h2 style="margin: 0 0 36px 0; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em;">Money problems start small.</h2>
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px;">
+        <div style="font-size: clamp(19px, 2vw, 26px); line-height: 1.35; color: #333333;">A bill you forgot.</div>
+        <div style="font-size: clamp(19px, 2vw, 26px); line-height: 1.35; color: #333333;">A subscription you meant to cancel.</div>
+        <div style="font-size: clamp(19px, 2vw, 26px); line-height: 1.35; color: #333333;">Savings you planned to move.</div>
+        <div style="font-size: clamp(19px, 2vw, 26px); line-height: 1.35; color: #333333;">Tax money left in your spending balance.</div>
+      </div>
+      <p style="margin: 0 0 14px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">re:verse catches these moments and prepares the next move before they turn into a problem.</p>
+      <p style="margin: 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #0D0D0D;">You review. You approve.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. INTENT — light ============ -->
+  <section data-screen-label="Intent" style="background: #EDEDED; padding: 0 24px clamp(88px, 12vw, 160px) 24px;">
+    <div data-reveal="true" style="max-width: 880px; margin: 0 auto;">
+      <h2 style="margin: 0 0 32px 0; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em;">When you want something, just say it.</h2>
+      <p style="margin: 0 0 28px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">re:verse comes to you when money needs attention. When you need something first, ask in your own words:</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px;">
+        <div style="background: #FFFFFF; color: #333333; border-radius: 999px; padding: 12px 22px; font-family: 'Geist Mono', monospace; font-size: 14px; box-shadow: 0 1px 2px rgba(13,13,13,0.05);">“Can I spend this?”</div>
+        <div style="background: #FFFFFF; color: #333333; border-radius: 999px; padding: 12px 22px; font-family: 'Geist Mono', monospace; font-size: 14px; box-shadow: 0 1px 2px rgba(13,13,13,0.05);">“Cover rent”</div>
+        <div style="background: #FFFFFF; color: #333333; border-radius: 999px; padding: 12px 22px; font-family: 'Geist Mono', monospace; font-size: 14px; box-shadow: 0 1px 2px rgba(13,13,13,0.05);">“Save for December.”</div>
+      </div>
+      <p style="margin: 0 0 14px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">re:verse turns your request into a clear plan with the amount, the reason and the outcome.</p>
+      <p style="margin: 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #0D0D0D;">You approve when it makes sense.</p>
+    </div>
+  </section>
+
+  <!-- ============ 5. USE CASES — light ============ -->
+  <section data-screen-label="Use cases" style="background: #EDEDED; padding: 0 24px clamp(88px, 12vw, 160px) 24px;">
+    <div data-reveal="true" style="max-width: 1140px; margin: 0 auto;">
+      <div style="max-width: 880px;">
+        <h2 style="margin: 0 0 24px 0; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em; text-wrap: pretty;">One agent for the money work you keep in your head.</h2>
+        <p style="margin: 0 0 48px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">re:verse handles the financial tasks spread across your apps: spending, savings, bills, rent, subscriptions, currency moves and stablecoins.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <sc-for list="{{ useCases }}" as="uc" hint-placeholder-count="4">
+          <div style="background: #FFFFFF; border: 1px solid rgba(13,13,13,0.06); border-radius: 16px; padding: 20px; display: flex; flex-direction: column;">
+            <div style="font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #999999; margin-bottom: 14px;">{{ uc.label }}</div>
+            <div style="font-size: 15px; color: #333333; margin-bottom: 6px;">{{ uc.title }}</div>
+            <div style="font-size: 18px; color: #0D0D0D; line-height: 1.35; margin-bottom: 20px; flex: 1;">{{ uc.action }}</div>
+            <div style="display: flex; gap: 8px;">
+              <div style="height: 34px; padding: 0 18px; display: inline-flex; align-items: center; border-radius: 999px; background: #150A89; color: #FFFFFF; font-size: 13px;">{{ uc.primary }}</div>
+              <div style="height: 34px; padding: 0 18px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid rgba(13,13,13,0.15); color: #333333; font-size: 13px;">{{ uc.secondary }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. CONTROL — light ============ -->
+  <section data-screen-label="Control" style="background: #EDEDED; padding: 0 24px clamp(88px, 12vw, 160px) 24px;">
+    <div data-reveal="true" style="max-width: 880px; margin: 0 auto;">
+      <h2 style="margin: 0 0 32px 0; font-weight: 400; font-size: clamp(32px, 4.4vw, 56px); line-height: 1.08; letter-spacing: -0.025em;">You stay in control.</h2>
+      <p style="margin: 0 0 14px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">re:verse can suggest, prepare and explain. It does not move money without your approval.</p>
+      <p style="margin: 0 0 40px 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #333333; max-width: 36em; text-wrap: pretty;">Start in read-only mode. Review every plan before anything happens. Set limits for repeated actions when you are ready.</p>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-bottom: 40px;">
+        <div style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #333333; border: 1px solid rgba(13,13,13,0.18); border-radius: 999px; padding: 9px 18px; white-space: nowrap;">Read-only</div>
+        <div style="width: 28px; height: 1px; background: rgba(13,13,13,0.25);"></div>
+        <div style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #333333; border: 1px solid rgba(13,13,13,0.18); border-radius: 999px; padding: 9px 18px; white-space: nowrap;">Approval</div>
+        <div style="width: 28px; height: 1px; background: rgba(13,13,13,0.25);"></div>
+        <div style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #333333; border: 1px solid rgba(13,13,13,0.18); border-radius: 999px; padding: 9px 18px; white-space: nowrap;">Limits</div>
+      </div>
+      <p style="margin: 0; font-size: clamp(17px, 1.7vw, 21px); line-height: 1.55; color: #0D0D0D;">You decide what gets approved.</p>
+    </div>
+  </section>
+
+  <!-- ============ 7. CLOSING — dark ============ -->
+  <section data-screen-label="Closing" style="position: relative; background: #0D0D0D; color: #FFFFFF; overflow: hidden; padding: clamp(110px, 16vw, 200px) 24px clamp(64px, 8vw, 100px) 24px;">
+    <div aria-hidden="true" style="position: absolute; left: 50%; bottom: -55%; width: 70%; aspect-ratio: 1; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(255,255,255,{{ closeCore }}) 0%, rgba(150,130,240,{{ closeMid }}) 24%, rgba(21,10,137,{{ closeLow }}) 50%, rgba(13,13,13,0) 70%); filter: blur(70px); pointer-events: none; animation: {{ driftAnimSlow }};"></div>
+    <div data-reveal="true" style="position: relative; z-index: 2; max-width: 880px; margin: 0 auto; text-align: center;">
+      <h2 style="margin: 0 0 44px 0; font-weight: 400; font-size: clamp(38px, 5.4vw, 68px); line-height: 1.05; letter-spacing: -0.03em;">Get your headspace back.</h2>
+      <sc-if value="{{ closeFormOpen }}" hint-placeholder-val="{{ false }}">
+        <form onsubmit="{{ submitClose }}" style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 460px; margin: 0 auto; justify-content: center;">
+          <input type="email" required="" autofocus="" name="email" value="{{ email }}" onchange="{{ onEmail }}" placeholder="Email" aria-label="Email" style="flex: 1 1 220px; height: 52px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.06); color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; outline: none;">
+          <button type="submit" style="height: 52px; padding: 0 28px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 16px; cursor: pointer;" style-hover="background: #1B0FAE;">{{ closeFormLabel }}</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{ closeFormClosed }}" hint-placeholder-val="{{ true }}">
+        <button onclick="{{ openCloseForm }}" style="height: 56px; padding: 0 32px; border-radius: 999px; border: none; background: #150A89; color: #FFFFFF; font-family: 'Geist', Inter, system-ui, sans-serif; font-size: 17px; cursor: pointer;" style-hover="background: #1B0FAE;">Join the private beta →</button>
+      </sc-if>
+      <div style="margin-top: clamp(90px, 12vw, 150px); font-size: 15px; color: rgba(255,255,255,0.55);">re:verse. Live by your own rules.</div>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;glowIntensity&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1.6,&quot;min&quot;:0.4,&quot;max&quot;:1.6,&quot;step&quot;:0.05,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Gradient cores&quot;},&quot;gradientDrift&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Gradient cores&quot;}}">
+class Component extends DCLogic {
+  state = { heroForm: false, closeForm: false, email: '', heroDone: false, closeDone: false };
+
+  componentDidMount() {
+    // Subtle scroll reveal for below-fold sections
+    const root = document.querySelector('[data-screen-label="Time"]')?.parentElement;
+    if (!root) return;
+    const els = root.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.9) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(18px)';
+        el.style.transition = 'opacity 300ms ease-out, transform 300ms ease-out';
+        io.observe(el);
+      }
+    });
+    this._io = io;
+  }
+
+  componentWillUnmount() { if (this._io) this._io.disconnect(); }
+
+  async submitLead(e, source, doneKey) {
+    e.preventDefault();
+    const email = e.target.email.value.trim();
+    if (!email) return;
+    try {
+      const r = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source })
+      });
+      if (!r.ok) throw new Error('subscribe failed: ' + r.status);
+      this.setState({ [doneKey]: true });
+    } catch (err) {
+      console.error(err);
+      alert('Something went wrong. Please try again.');
+    }
+  }
+
+  renderVals() {
+    const glow = this.props.glowIntensity ?? 1;
+    const drift = this.props.gradientDrift ?? true;
+    const s = this.state;
+    return {
+      // hero gradient
+      glowMid: (0.5 * glow).toFixed(3),
+      glowLow: (0.55 * glow).toFixed(3),
+      glowFaint: (0.28 * glow).toFixed(3),
+      // closing gradient (calmer)
+      closeCore: (0.55 * glow).toFixed(3),
+      closeMid: (0.32 * glow).toFixed(3),
+      closeLow: (0.4 * glow).toFixed(3),
+      driftAnim: drift ? 'rvDrift 38s ease-in-out infinite' : 'none',
+      driftAnimSlow: drift ? 'rvDrift 52s ease-in-out infinite' : 'none',
+
+      email: s.email,
+      onEmail: (e) => this.setState({ email: e.target.value }),
+
+      heroFormOpen: s.heroForm,
+      heroFormClosed: !s.heroForm,
+      heroFormLabel: s.heroDone ? 'You’re on the list' : 'Join →',
+      openHeroForm: () => this.setState({ heroForm: true }),
+      submitHero: (e) => this.submitLead(e, 'hero', 'heroDone'),
+
+      closeFormOpen: s.closeForm,
+      closeFormClosed: !s.closeForm,
+      closeFormLabel: s.closeDone ? 'You’re on the list' : 'Join →',
+      openCloseForm: () => this.setState({ closeForm: true }),
+      submitClose: (e) => this.submitLead(e, 'closing', 'closeDone'),
+
+      useCases: [
+        { label: 'Upcoming', title: 'Rent due in 5 days.', action: 'Move €1,200 to Rent Reserve.', primary: 'Approve', secondary: 'Edit' },
+        { label: 'Goal', title: 'December savings goal.', action: 'Add €250 from this income.', primary: 'Approve', secondary: 'Edit' },
+        { label: 'Subscription', title: '', action: 'Netflix renews tomorrow.', primary: 'Cancel', secondary: 'Keep' },
+        { label: 'Currency move', title: 'Card payment due in EUR.', action: 'Convert €300 from USDC.', primary: 'Approve', secondary: 'Edit' }
+      ]
+    };
+  }
+}
+</script>
+
+
+</body></html>

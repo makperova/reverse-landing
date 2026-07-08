@@ -360,9 +360,15 @@ a:hover{color:#ffffff;}
         <h1 style="margin:0 0 28px;font-size:clamp(42px,5.8vw,72px);line-height:1.04;font-weight:700;letter-spacing:-0.03em;color:#fff;"><span style="white-space:nowrap;">Take money admin</span><br>off your plate.</h1>
         <p style="margin:0 0 16px;font-size:20px;line-height:1.55;color:rgba(232,238,242,.72);max-width:520px;">re:verse is your AI money agent for spending plans, savings, bills and currency moves across your accounts, cards and stablecoins.</p>
         <p style="margin:0 0 40px;font-size:20px;line-height:1.55;color:#fff;max-width:520px;">It prepares the next move. <span style="color:#9CC3D9;">You approve before anything happens.</span></p>
-        <div style="display:flex;align-items:center;gap:20px;">
-          <a href="#beta" style="display:inline-block;background:#E8EEF2;color:#070C10;font-size:17px;font-weight:700;padding:16px 32px;border-radius:100px;text-decoration:none;transition:transform .12s ease, background .2s ease;" style-hover="background:#ffffff;transform:translateY(-1px);" style-active="transform:scale(.95);">Join the private beta →</a>
-        </div>
+        <sc-if value="{{ heroLeadActive }}" hint-placeholder-val="{{ true }}">
+          <form onsubmit="{{ submitHero }}" style="display:flex;flex-wrap:wrap;gap:10px;max-width:480px;">
+            <input type="email" required="" name="email" value="{{ heroEmail }}" onchange="{{ onHeroEmail }}" placeholder="Email" aria-label="Email" style="flex:1 1 220px;height:56px;padding:0 22px;border-radius:100px;border:1px solid rgba(232,238,242,0.3);background:rgba(7,12,16,0.5);color:#E8EEF2;font-family:'Geist',Inter,system-ui,sans-serif;font-size:16px;outline:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);">
+            <button type="submit" style="height:56px;padding:0 32px;border-radius:100px;border:none;background:#E8EEF2;color:#070C10;font-family:'Geist',Inter,system-ui,sans-serif;font-size:17px;font-weight:700;cursor:pointer;transition:transform .12s ease, background .2s ease;" style-hover="background:#ffffff;" style-active="transform:scale(.95);">Join the private beta →</button>
+          </form>
+        </sc-if>
+        <sc-if value="{{ heroLeadDone }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;align-items:center;gap:10px;height:56px;font-family:'Geist',Inter,system-ui,sans-serif;font-size:18px;font-weight:600;color:#E8EEF2;">✓&nbsp; You’re on the list — we’ll be in touch.</div>
+        </sc-if>
       </div>
     </div>
 
@@ -576,13 +582,13 @@ a:hover{color:#ffffff;}
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,#070C10 0%,rgba(7,12,16,.94) 8%,rgba(7,12,16,.76) 20%,rgba(7,12,16,.52) 33%,rgba(7,12,16,.34) 46%,rgba(7,12,16,.42) 60%,rgba(4,8,11,.62) 74%,rgba(4,8,11,.85) 87%,rgba(4,8,11,.96) 95%,#04080B 100%);"></div>
     <div style="position:relative;max-width:880px;margin:0 auto;min-height:min(680px,88svh);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:clamp(80px,11vw,120px) clamp(20px,4.6vw,56px);text-align:center;box-sizing:border-box;">
       <h2 style="margin:0 0 40px;font-size:clamp(42px,5.8vw,72px);line-height:1.04;font-weight:700;letter-spacing:-0.03em;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.4);">Get your headspace back.</h2>
-      <sc-if value="{{ leadActive }}" hint-placeholder-val="{{ true }}">
-        <form onsubmit="{{ submitLead }}" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;width:100%;max-width:480px;">
-          <input type="email" required="" name="email" value="{{ email }}" onchange="{{ onEmail }}" placeholder="Email" aria-label="Email" style="flex:1 1 240px;height:56px;padding:0 22px;border-radius:100px;border:1px solid rgba(232,238,242,0.3);background:rgba(7,12,16,0.5);color:#E8EEF2;font-family:'Geist',Inter,system-ui,sans-serif;font-size:16px;outline:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);">
+      <sc-if value="{{ closeLeadActive }}" hint-placeholder-val="{{ true }}">
+        <form onsubmit="{{ submitClose }}" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;width:100%;max-width:480px;">
+          <input type="email" required="" name="email" value="{{ closeEmail }}" onchange="{{ onCloseEmail }}" placeholder="Email" aria-label="Email" style="flex:1 1 240px;height:56px;padding:0 22px;border-radius:100px;border:1px solid rgba(232,238,242,0.3);background:rgba(7,12,16,0.5);color:#E8EEF2;font-family:'Geist',Inter,system-ui,sans-serif;font-size:16px;outline:none;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);">
           <button type="submit" style="height:56px;padding:0 34px;border-radius:100px;border:none;background:#E8EEF2;color:#070C10;font-family:'Geist',Inter,system-ui,sans-serif;font-size:17px;font-weight:700;cursor:pointer;transition:transform .12s ease, background .2s ease;" style-hover="background:#ffffff;" style-active="transform:scale(.95);">Join →</button>
         </form>
       </sc-if>
-      <sc-if value="{{ leadDone }}" hint-placeholder-val="{{ false }}">
+      <sc-if value="{{ closeLeadDone }}" hint-placeholder-val="{{ false }}">
         <div style="display:flex;align-items:center;gap:10px;height:56px;font-family:'Geist',Inter,system-ui,sans-serif;font-size:18px;font-weight:600;color:#E8EEF2;">✓&nbsp; You’re on the list — we’ll be in touch.</div>
       </sc-if>
       <div style="margin-top:64px;font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.1em;color:rgba(232,238,242,.7);">re:verse. Live by your own rules.</div>
@@ -606,7 +612,7 @@ a:hover{color:#ffffff;}
 </x-dc>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;heroMotion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;heroGlow&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
 class Component extends DCLogic {
-  state = { soundOn: false, email: '', leadDone: false, vw: (typeof window !== 'undefined' && window.innerWidth) || 1440 };
+  state = { soundOn: false, heroEmail: '', closeEmail: '', heroDone: false, closeDone: false, vw: (typeof window !== 'undefined' && window.innerWidth) || 1440 };
   onResize = () => this.setState({ vw: window.innerWidth });
   videoRef = React.createRef();
   stillRef = React.createRef();
@@ -684,9 +690,7 @@ class Component extends DCLogic {
     this.setState({ soundOn: turningOn });
   };
 
-  onEmail = (e) => this.setState({ email: e.target.value });
-
-  submitLead = async (e) => {
+  submitLead = async (e, source, doneKey, emailKey) => {
     e.preventDefault();
     const email = (e.target.email.value || '').trim();
     if (!email) return;
@@ -694,10 +698,10 @@ class Component extends DCLogic {
       const r = await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, source: 'v4-closing' })
+        body: JSON.stringify({ email, source })
       });
       if (!r.ok) throw new Error('subscribe failed: ' + r.status);
-      this.setState({ leadDone: true, email: '' });
+      this.setState({ [doneKey]: true, [emailKey]: '' });
     } catch (err) {
       console.error(err);
       alert('Something went wrong. Please try again.');
@@ -739,11 +743,16 @@ class Component extends DCLogic {
       soundLabel: on ? 'sound on' : 'sound off',
       soundDotColor: on ? '#9CC3D9' : 'rgba(232,238,242,.35)',
       soundDotShadow: on ? '0 0 10px rgba(156,195,217,.9)' : 'none',
-      email: this.state.email,
-      onEmail: this.onEmail,
-      submitLead: this.submitLead,
-      leadActive: !this.state.leadDone,
-      leadDone: this.state.leadDone,
+      heroEmail: this.state.heroEmail,
+      onHeroEmail: (e) => this.setState({ heroEmail: e.target.value }),
+      submitHero: (e) => this.submitLead(e, 'v4-hero', 'heroDone', 'heroEmail'),
+      heroLeadActive: !this.state.heroDone,
+      heroLeadDone: this.state.heroDone,
+      closeEmail: this.state.closeEmail,
+      onCloseEmail: (e) => this.setState({ closeEmail: e.target.value }),
+      submitClose: (e) => this.submitLead(e, 'v4-closing', 'closeDone', 'closeEmail'),
+      closeLeadActive: !this.state.closeDone,
+      closeLeadDone: this.state.closeDone,
       useCases: [
         { tag: 'Upcoming', title: 'Rent due in 5 days.', detail: 'Move €1,200 to Rent Reserve.', primary: 'Approve', secondary: 'Edit' },
         { tag: 'Goal', title: 'December savings goal.', detail: 'Add €250 from this income.', primary: 'Approve', secondary: 'Edit' },

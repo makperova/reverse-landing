@@ -3,7 +3,8 @@ const { Pool } = require('pg');
 
 const app = express();
 app.use(express.json());
-app.use(express.static('public'));
+// extensions: чтобы /terms отдавал public/terms.html
+app.use(express.static('public', { extensions: ['html'] }));
 
 // DATABASE_URL появляется автоматически, когда в Replit добавлена PostgreSQL
 const dbUrl = process.env.DATABASE_URL;

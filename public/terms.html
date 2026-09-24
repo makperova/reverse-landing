@@ -6,6 +6,8 @@
 <title>Terms of Use — re:verse</title>
 <meta name="description" content="General terms and conditions, cookies policy, card and wallet terms for re:verse, a brand of TARAKA HOLDING LTD.">
 <link rel="stylesheet" href="assets/fonts.css">
+<script>/* ?embed=1 — режим для мобильного приложения: без шапки и подвала, фон #0D0D0D */
+if (new URLSearchParams(location.search).has('embed')) document.documentElement.classList.add('embed');</script>
 <style>
 :root{--bg:#070C10;--bg2:#04080B;--fg:#E8EEF2;--text:rgba(232,238,242,.78);--muted:rgba(232,238,242,.72);--dim:rgba(232,238,242,.6);--faint:rgba(232,238,242,.4);--accent:#9CC3D9;--line:rgba(232,238,242,.1);--card:rgba(232,238,242,.03);--gutter:clamp(20px,4.6vw,56px)}
 html{scroll-behavior:smooth}
@@ -73,6 +75,13 @@ a{color:var(--accent)}a:hover{color:#fff}
 .footer-links a{color:var(--dim);text-decoration:none;font-size:14px}
 .footer-links a:hover{color:#fff}
 .footer-copy{font-family:'Geist Mono',monospace;font-size:12px;color:var(--faint)}
+
+/* embed mode (mobile app webview) */
+html.embed{--bg:#0D0D0D;--bg2:#0D0D0D}
+html.embed,html.embed body{background:#0D0D0D}
+html.embed .nav,html.embed .footer{display:none}
+html.embed .head{padding-top:clamp(28px,5vw,48px)}
+html.embed .doc h2,html.embed .doc h3,html.embed .doc h4{scroll-margin-top:16px}
 </style>
 </head>
 <body>

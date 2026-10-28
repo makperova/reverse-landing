@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal Notice — re:verse</title>
+<meta name="description" content="Legal notice and regulatory disclosures for re:verse: platform operator, programme manager, regulated service providers and risk warning.">
+<link rel="stylesheet" href="assets/fonts.css">
+<script>/* ?embed=1 — режим для мобильного приложения: без шапки и подвала, фон #0D0D0D */
+if (new URLSearchParams(location.search).has('embed')) document.documentElement.classList.add('embed');</script>
+<style>
+:root{--bg:#070C10;--bg2:#04080B;--fg:#E8EEF2;--text:rgba(232,238,242,.78);--muted:rgba(232,238,242,.72);--dim:rgba(232,238,242,.6);--faint:rgba(232,238,242,.4);--accent:#9CC3D9;--line:rgba(232,238,242,.1);--card:rgba(232,238,242,.03);--gutter:clamp(20px,4.6vw,56px)}
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:var(--bg)}
+body{font-family:'Geist',Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--fg);min-width:320px}
+::selection{background:rgba(150,190,215,.35);color:#fff}
+a{color:var(--accent)}a:hover{color:#fff}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px var(--gutter);background:rgba(7,12,16,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,238,242,.07)}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-logo img{display:block;height:20px;width:auto}
+.nav-right,.nav-links{display:flex;align-items:center;gap:clamp(16px,2.4vw,28px)}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:15px}
+.nav-links a:hover{color:#fff}
+.btn{color:var(--bg);background:var(--fg);text-decoration:none;font-size:15px;font-weight:600;padding:10px 20px;border-radius:100px;white-space:nowrap;transition:transform .12s ease,background .2s ease}
+.btn:hover{background:#fff;color:var(--bg)}
+.btn:active{transform:scale(.94)}
+@media (max-width:759px){.nav-links{display:none}}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gutter);box-sizing:border-box}
+.head{padding-top:clamp(56px,8vw,104px);padding-bottom:clamp(28px,4vw,48px);animation:fadeUp .8s ease both}
+.eyebrow{font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+.head h1{margin:0 0 20px;font-size:clamp(38px,5.4vw,68px);line-height:1.04;font-weight:700;letter-spacing:-.03em;color:#fff}
+.head .sub{margin:0;font-size:18px;line-height:1.5;color:var(--muted)}
+
+.doc{padding-bottom:clamp(72px,10vw,140px)}
+.doc-inner{max-width:780px;font-size:17px;line-height:1.65;color:var(--text);animation:fadeUp .8s ease .1s both}
+.doc h2{margin:clamp(56px,7vw,80px) 0 22px;padding-top:clamp(36px,4vw,48px);border-top:1px solid var(--line);font-size:clamp(27px,3.4vw,38px);line-height:1.1;font-weight:700;letter-spacing:-.025em;color:#fff;scroll-margin-top:84px}
+.doc h3{margin:40px 0 14px;font-size:22px;line-height:1.3;font-weight:600;letter-spacing:-.015em;color:#fff;scroll-margin-top:84px}
+.doc h4{margin:30px 0 12px;font-size:18px;line-height:1.4;font-weight:600;color:#fff;scroll-margin-top:84px}
+.doc p{margin:0 0 18px}
+.doc strong{color:#fff;font-weight:600}
+.doc mark{background:rgba(255,214,102,.2);color:#fff;padding:0 3px;border-radius:3px}
+.doc u{text-underline-offset:3px;text-decoration-color:rgba(232,238,242,.45)}
+.doc a{word-break:break-word}
+.doc ol,.doc ul{margin:0 0 20px;padding-left:30px}
+.doc li{margin:0 0 10px;padding-left:6px}
+.doc li>p{margin:0 0 8px}
+.doc li>p:last-child{margin-bottom:0}
+.doc ol>li::marker{color:var(--accent);font-family:'Geist Mono',monospace;font-size:14px}
+.doc ul>li::marker{color:var(--accent)}
+.doc ol ol,.doc ol ul,.doc ul ol,.doc ul ul{margin:10px 0 0}
+.doc blockquote{margin:0 0 20px;padding:0 0 0 20px;border-left:2px solid rgba(156,195,217,.5);color:var(--muted)}
+.doc .table-wrap{overflow-x:auto;margin:0 0 28px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.doc table{width:100%;min-width:540px;border-collapse:collapse;font-size:15px;line-height:1.5}
+.doc th{text-align:left;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--accent);padding:14px 18px;border-bottom:1px solid var(--line)}
+.doc td{padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--text)}
+.doc tr:last-child td{border-bottom:0}
+
+.toc{margin:clamp(40px,5vw,56px) 0;padding:26px 30px 16px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
+.toc .eyebrow{margin-bottom:8px}
+.toc ol{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.toc li{margin:0;padding:11px 0;border-top:1px solid var(--line);break-inside:avoid}
+.toc a{color:rgba(232,238,242,.8);text-decoration:none;font-size:16px;line-height:1.4}
+.toc a:hover{color:#fff}
+.toc ol ol{columns:1;margin:6px 0 0;padding-left:18px}
+.toc ol ol li{padding:6px 0 0;border-top:0}
+.toc ol ol a{font-size:14px;color:var(--dim)}
+@media (max-width:759px){.toc{padding:22px 20px 12px}.toc ol{columns:1}}
+
+.footer{padding:28px var(--gutter) 28px;background:var(--bg2)}
+.footer-legal{margin:24px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.footer-legal .eyebrow{font-size:11px;margin-bottom:16px}
+.footer-legal-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px clamp(24px,3vw,40px);font-size:13px;line-height:1.6;color:rgba(232,238,242,.45)}
+@media (max-width:999px){.footer-legal-cols{grid-template-columns:1fr 1fr}}
+@media (max-width:759px){.footer-legal-cols{grid-template-columns:1fr}}
+.footer-legal p{margin:0}
+.footer-legal a{font-family:'Geist Mono',monospace;font-size:12px;color:var(--dim);text-decoration:underline;text-underline-offset:3px}
+.footer-legal a:hover{color:#fff}
+.footer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px}
+.footer-logo{display:block;height:15px;width:auto;opacity:.85}
+.footer-links{display:flex;align-items:center;gap:clamp(16px,2.4vw,28px)}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:14px}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-family:'Geist Mono',monospace;font-size:12px;color:var(--faint)}
+
+/* embed mode (mobile app webview) */
+html.embed{--bg:#0D0D0D;--bg2:#0D0D0D}
+html.embed,html.embed body{background:#0D0D0D}
+html.embed .nav,html.embed .footer{display:none}
+html.embed .head{padding-top:clamp(28px,5vw,48px)}
+html.embed .doc h2,html.embed .doc h3,html.embed .doc h4{scroll-margin-top:16px}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="/" class="nav-logo"><img src="assets/asset00.png" alt="re:verse"></a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="/#how">How it works</a>
+      <a href="/#story">Our Story</a>
+      <a href="/#security">Security</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+    <a href="/#beta" class="btn">Join the private beta</a>
+  </div>
+</div>
+
+<header class="wrap head">
+  <div class="eyebrow">Legal</div>
+  <h1>Legal Notice &amp; Regulatory Disclosures</h1>
+  <p class="sub">Last updated: 27 October 2026</p>
+</header>
+
+<main class="wrap doc">
+<article class="doc-inner">
+<h2 id="platform-operator">1. Platform Operator</h2>
+<p>The website <strong>revrs.ai</strong> and the <strong>re:verse</strong> brand, platform and mobile application are operated by <strong>TARAKA HOLDING LTD</strong>, a company incorporated in the Republic of Cyprus.</p>
+<ul>
+<li><p><strong>Company name:</strong> TARAKA HOLDING LTD</p></li>
+<li><p><strong>Registration number:</strong> HE 447833</p></li>
+<li><p><strong>VAT number:</strong> [TO COMPLETE]</p></li>
+<li><p><strong>Registered office:</strong> Thessalonikis 43, Thessaloniki Court, 3rd Floor, Office 301, Agias Zonis, 3025 Limassol, Cyprus</p></li>
+<li><p><strong>Contact:</strong> hello@revrs.ai</p></li>
+</ul>
+<p><strong>TARAKA HOLDING LTD</strong> operates the re:verse platform and does not hold user funds. TARAKA HOLDING LTD is not a bank, electronic money institution or crypto-asset service provider. Payment and crypto-asset services available through re:verse are provided by the licensed partners listed below.</p>
+<h2 id="programme-manager">2. Programme Manager</h2>
+<p>re:verse provides access to regulated services through a programme managed by <strong>HOPPACARD d.o.o.</strong> (Slovenia, reg. no. 9221638000), owned by Hoppa Global Holding BV (hereafter "Hoppa"), under the Hoppa group's agreements with the licensed institutions named below. HOPPACARD d.o.o. is not a bank, payment institution, electronic money institution or crypto-asset service provider.</p>
+<h2 id="regulated-service-providers">3. Regulated Service Providers</h2>
+<h3 id="a.-crypto-asset-services">A. Crypto-Asset Services</h3>
+<p>Exchange between USDC and fiat currencies and custody of crypto-assets are provided by <strong>Zillion Bits Ltd</strong> (trading as ZBX).</p>
+<ul>
+<li><p><strong>Company:</strong> Zillion Bits Ltd, Malta, company no. C 88757</p></li>
+<li><p><strong>Registered office:</strong> Level 3 (Suite 2267), Tower Business Centre, Tower Street, Swatar BKR 4013, Malta</p></li>
+<li><p><strong>Crypto-asset services:</strong> authorised by the Malta Financial Services Authority as a Crypto-Asset Service Provider under MiCA, Authorisation ID ZBL-24354</p></li>
+<li><p><strong>Payment services in relation to e-money tokens:</strong> Authorisation ID ZBL-28410</p></li>
+<li><p><strong>Currently supported asset:</strong> USDC</p></li>
+</ul>
+<h3 id="b.-payment-accounts-ibans">B. Payment Accounts &amp; IBANs</h3>
+<p>For users in the European Economic Area, payment services are provided by <strong>Equals Money Europe SA</strong> (Belgium, enterprise no. 0849.185.510, Avenue Louise 54, Suite 52, Floor 4, 1050 Brussels), authorised by the National Bank of Belgium. Dedicated IBANs are issued by Equals Money Europe SA.</p>
+<p>For users with a UK market account (GB IBAN), payment services are provided by <strong>Equals Money Plc</strong>. Equals Money Plc is authorised as a Payment Institution by the Financial Conduct Authority (FCA) with Firm Reference Number (FRN) 488396. Company registered in England &amp; Wales No. 05539698. Registered Office: 3rd Floor, Vintners' Place, 68 Upper Thames St, London, EC4V 3BJ. Equals Money Plc accounts are not covered by the Financial Services Compensation Scheme (FSCS), instead your money is protected via safeguarding. Your funds are held in specially designated, safeguarded bank accounts, which keep them separate from our other assets.</p>
+<p><strong>Supported payment schemes:</strong> SWIFT, SEPA, Faster Payments, BACS, CHAPS</p>
+<h3 id="c-cards">C. Cards</h3>
+<p>Cards are issued by <strong>Equals Money International Limited</strong> pursuant to licence by Mastercard International Inc. Equals Money International Limited is authorised as an Electronic Money Institution by the FCA with FRN 900493. Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated.</p>
+<p>Access to re:verse services requires identity verification (KYC) by our regulated partners.</p>
+<h2 id="crypto-asset-risk-warning">4. Crypto-Asset Risk Warning</h2>
+<blockquote>
+<p><strong>Risk warning:</strong> Crypto-assets, including stablecoins, carry risk. The value of a stablecoin may deviate from its reference currency, and you may lose part or all of the funds converted. Crypto-asset services are not covered by investor compensation or deposit guarantee schemes. Crypto-asset services depend on third-party providers and may be suspended or interrupted. Please make sure you understand these risks before using crypto-asset services.</p>
+</blockquote>
+<h2 id="legal-compliance-contact">5. Legal &amp; Compliance Contact</h2>
+<ul>
+<li><p><strong>Legal, compliance and complaints:</strong> legal@revrs.ai</p></li>
+<li><p><strong>Entity:</strong> TARAKA HOLDING LTD</p></li>
+<li><p><strong>Address:</strong> Thessalonikis 43, Thessaloniki Court, 3rd Floor, Office 301, Agias Zonis, 3025 Limassol, Cyprus</p></li>
+</ul>
+</article>
+</main>
+
+<div class="footer">
+  <div class="footer-row">
+    <img src="assets/asset00.png" alt="re:verse" class="footer-logo">
+    <div class="footer-links">
+      <a href="mailto:hello@revrs.ai">hello@revrs.ai</a>
+    </div>
+    <div class="footer-copy">© 2026 re:verse · Private beta</div>
+  </div>
+  <div class="footer-legal" id="footer-legal">
+    <div class="eyebrow">Regulatory disclosure</div>
+    <div class="footer-legal-cols">
+<p>re:verse is a product of TARAKA HOLDING LTD, Cyprus, reg. no. HE 447833. TARAKA HOLDING LTD is not a bank, e-money institution or crypto-asset service provider. Payment and crypto-asset services are provided by licensed partners. <a href="/legal">Legal notice</a></p>
+<p>For users in the European Economic Area, payment services are provided by Equals Money Europe SA, authorised by the National Bank of Belgium.</p>
+<p>For users with a UK market account, payment services are provided by Equals Money Plc. Equals Money Plc is authorised as a Payment Institution by the Financial Conduct Authority (FCA) with Firm Reference Number (FRN) 488396. Company registered in England &amp; Wales No. 05539698. Registered Office: 3rd Floor, Vintners’ Place, 68 Upper Thames St, London, EC4V 3BJ.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

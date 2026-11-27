@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equals Money Terms — re:verse</title>
+<meta name="description" content="Equals Money General Terms and Conditions – Retail (EEA), the partner terms for payment and card services in re:verse.">
+<link rel="stylesheet" href="assets/fonts.css">
+<script>/* ?embed=1 — режим для мобильного приложения: без шапки и подвала, фон #0D0D0D */
+if (new URLSearchParams(location.search).has('embed')) document.documentElement.classList.add('embed');</script>
+<style>
+:root{--bg:#070C10;--bg2:#04080B;--fg:#E8EEF2;--text:rgba(232,238,242,.78);--muted:rgba(232,238,242,.72);--dim:rgba(232,238,242,.6);--faint:rgba(232,238,242,.4);--accent:#9CC3D9;--line:rgba(232,238,242,.1);--card:rgba(232,238,242,.03);--gutter:clamp(20px,4.6vw,56px)}
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:var(--bg)}
+body{font-family:'Geist',Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:var(--fg);min-width:320px}
+::selection{background:rgba(150,190,215,.35);color:#fff}
+a{color:var(--accent)}a:hover{color:#fff}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px var(--gutter);background:rgba(7,12,16,.72);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,238,242,.07)}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-logo img{display:block;height:20px;width:auto}
+.nav-right,.nav-links{display:flex;align-items:center;gap:clamp(16px,2.4vw,28px)}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:15px}
+.nav-links a:hover{color:#fff}
+.btn{color:var(--bg);background:var(--fg);text-decoration:none;font-size:15px;font-weight:600;padding:10px 20px;border-radius:100px;white-space:nowrap;transition:transform .12s ease,background .2s ease}
+.btn:hover{background:#fff;color:var(--bg)}
+.btn:active{transform:scale(.94)}
+@media (max-width:759px){.nav-links{display:none}}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gutter);box-sizing:border-box}
+.head{padding-top:clamp(56px,8vw,104px);padding-bottom:clamp(28px,4vw,48px);animation:fadeUp .8s ease both}
+.eyebrow{font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:24px}
+.head h1{margin:0 0 20px;font-size:clamp(38px,5.4vw,68px);line-height:1.04;font-weight:700;letter-spacing:-.03em;color:#fff}
+.head .sub{margin:0;font-size:18px;line-height:1.5;color:var(--muted)}
+
+.doc{padding-bottom:clamp(72px,10vw,140px)}
+.doc-inner{max-width:780px;font-size:17px;line-height:1.65;color:var(--text);animation:fadeUp .8s ease .1s both}
+.doc h2{margin:clamp(56px,7vw,80px) 0 22px;padding-top:clamp(36px,4vw,48px);border-top:1px solid var(--line);font-size:clamp(27px,3.4vw,38px);line-height:1.1;font-weight:700;letter-spacing:-.025em;color:#fff;scroll-margin-top:84px}
+.doc h3{margin:40px 0 14px;font-size:22px;line-height:1.3;font-weight:600;letter-spacing:-.015em;color:#fff;scroll-margin-top:84px}
+.doc h4{margin:30px 0 12px;font-size:18px;line-height:1.4;font-weight:600;color:#fff;scroll-margin-top:84px}
+.doc p{margin:0 0 18px}
+.doc strong{color:#fff;font-weight:600}
+.doc mark,.head mark{background:rgba(255,214,102,.2);color:#fff;padding:0 3px;border-radius:3px}
+.doc u{text-underline-offset:3px;text-decoration-color:rgba(232,238,242,.45)}
+.doc a{word-break:break-word}
+.doc ol,.doc ul{margin:0 0 20px;padding-left:30px}
+.doc li{margin:0 0 10px;padding-left:6px}
+.doc li>p{margin:0 0 8px}
+.doc li>p:last-child{margin-bottom:0}
+.doc ol>li::marker{color:var(--accent);font-family:'Geist Mono',monospace;font-size:14px}
+.doc ul>li::marker{color:var(--accent)}
+.doc ol ol,.doc ol ul,.doc ul ol,.doc ul ul{margin:10px 0 0}
+.doc blockquote{margin:0 0 20px;padding:0 0 0 20px;border-left:2px solid rgba(156,195,217,.5);color:var(--muted)}
+.doc .table-wrap{overflow-x:auto;margin:0 0 28px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.doc table{width:100%;min-width:540px;border-collapse:collapse;font-size:15px;line-height:1.5}
+.doc th{text-align:left;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--accent);padding:14px 18px;border-bottom:1px solid var(--line)}
+.doc td{padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--text)}
+.doc tr:last-child td{border-bottom:0}
+
+.toc{margin:clamp(40px,5vw,56px) 0;padding:26px 30px 16px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
+.toc .eyebrow{margin-bottom:8px}
+.toc ol{list-style:none;margin:0;padding:0;columns:2;column-gap:40px}
+.toc li{margin:0;padding:11px 0;border-top:1px solid var(--line);break-inside:avoid}
+.toc a{color:rgba(232,238,242,.8);text-decoration:none;font-size:16px;line-height:1.4}
+.toc a:hover{color:#fff}
+.toc ol ol{columns:1;margin:6px 0 0;padding-left:18px}
+.toc ol ol li{padding:6px 0 0;border-top:0}
+.toc ol ol a{font-size:14px;color:var(--dim)}
+@media (max-width:759px){.toc{padding:22px 20px 12px}.toc ol{columns:1}}
+
+.footer{padding:28px var(--gutter) 28px;background:var(--bg2)}
+.footer-legal{margin:24px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.footer-legal .eyebrow{font-size:11px;margin-bottom:16px}
+.footer-legal-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px clamp(24px,3vw,40px);font-size:13px;line-height:1.6;color:rgba(232,238,242,.45)}
+@media (max-width:999px){.footer-legal-cols{grid-template-columns:1fr 1fr}}
+@media (max-width:759px){.footer-legal-cols{grid-template-columns:1fr}}
+.footer-legal p{margin:0}
+.footer-legal a{font-family:'Geist Mono',monospace;font-size:12px;color:var(--dim);text-decoration:underline;text-underline-offset:3px}
+.footer-legal a:hover{color:#fff}
+.footer-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px}
+.footer-logo{display:block;height:15px;width:auto;opacity:.85}
+.footer-links{display:flex;align-items:center;gap:clamp(16px,2.4vw,28px)}
+.footer-links a{color:var(--dim);text-decoration:none;font-size:14px}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-family:'Geist Mono',monospace;font-size:12px;color:var(--faint)}
+
+/* embed mode (mobile app webview) */
+html.embed{--bg:#0D0D0D;--bg2:#0D0D0D}
+html.embed,html.embed body{background:#0D0D0D}
+html.embed .nav,html.embed .footer{display:none}
+html.embed .head{padding-top:clamp(28px,5vw,48px)}
+html.embed .doc h2,html.embed .doc h3,html.embed .doc h4{scroll-margin-top:16px}
+
+/* partner terms: clause numbering comes from the source document, not from CSS counters */
+.doc h2 .n,.doc h3 .n{display:inline-block;min-width:1.9em;margin-right:.35em;color:var(--accent)}
+.doc h2.part{text-transform:none}
+.doc h2.part span{display:block;margin-bottom:14px;font-family:'Geist Mono',monospace;font-size:13px;line-height:1;font-weight:500;letter-spacing:.14em;color:var(--accent)}
+.doc p.lead strong:only-child{color:#fff}
+.doc p.cont{margin-left:68px}
+.cl{display:grid;grid-template-columns:68px minmax(0,1fr);margin:0 0 14px;scroll-margin-top:84px}
+.cl .n{font-family:'Geist Mono',monospace;font-size:14px;line-height:1.95;color:var(--accent);font-variant-numeric:tabular-nums}
+.cl.l3{margin-left:68px;grid-template-columns:78px minmax(0,1fr)}
+.cl.l4{margin-left:146px;grid-template-columns:44px minmax(0,1fr)}
+.defs{margin:8px 0 28px;border:1px solid var(--line);border-radius:16px;background:var(--card);font-size:15px;line-height:1.55}
+.def{display:grid;grid-template-columns:minmax(0,30%) minmax(0,1fr);gap:8px 24px;padding:14px 18px;border-top:1px solid var(--line)}
+.def:first-child{border-top:0}
+.def p{margin:0 0 8px}.def p:last-child{margin-bottom:0}
+.def .term{color:#fff}
+.def p.sub{padding-left:18px}
+@media (max-width:759px){
+.doc-inner{font-size:16px}
+.doc p.cont{margin-left:0}
+.cl{grid-template-columns:50px minmax(0,1fr)}
+.cl .n{font-size:13px;line-height:1.98}
+.cl.l3{margin-left:14px;grid-template-columns:62px minmax(0,1fr)}
+.cl.l4{margin-left:30px;grid-template-columns:36px minmax(0,1fr)}
+.def{grid-template-columns:1fr;gap:4px}
+}
+html.embed .cl{scroll-margin-top:16px}
+</style>
+</head>
+<body>
+<div class="nav">
+  <a href="/" class="nav-logo"><img src="assets/asset00.png" alt="re:verse"></a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="/#how">How it works</a>
+      <a href="/#story">Our Story</a>
+      <a href="/#security">Security</a>
+      <a href="/#faq">FAQ</a>
+    </div>
+    <a href="/#beta" class="btn">Join the private beta</a>
+  </div>
+</div>
+
+<header class="wrap head">
+  <div class="eyebrow">Partner terms · Equals Money</div>
+  <h1>Equals Money General Terms and Conditions – Retail (EEA)</h1>
+  <p class="sub">Terms of Equals Money Europe SA for the payment, card and currency exchange services in re:verse.</p>
+</header>
+
+<main class="wrap doc">
+<article class="doc-inner">
+<p class="lead">Under an agreement with TARAKA HOLDING LTD, (“Programme Partner”) We provide You with access to card and payment services. The Programme Partner acts as a programme partner and is not a regulated financial services provider. You may have a separate agreement with the Programme Partner that governs your relationship with them. We are not a party to that agreement and are not responsible for its terms or performance.</p>
+<nav class="toc" aria-label="Contents">
+<div class="eyebrow">Contents</div>
+<ol>
+<li><a href="#s-1">1. These Terms</a></li>
+<li><a href="#s-2">2. Definitions</a></li>
+<li><a href="#s-3">3. Use of the Services and Regulatory Information</a></li>
+<li><a href="#s-4">4. Additional Services</a></li>
+<li><a href="#s-5">5. Service Schedules and Order of Precedence</a></li>
+<li><a href="#s-6">6. Due Diligence Information</a></li>
+<li><a href="#s-7">7. Our obligations</a></li>
+<li><a href="#s-8">8. Your obligations</a></li>
+<li><a href="#s-9">9. Fees and Charges</a></li>
+<li><a href="#s-10">10. Authorised Users</a></li>
+<li><a href="#s-11">11. Your Payment Account</a></li>
+<li><a href="#s-12">12. Adding money to your Payment Account</a></li>
+<li><a href="#s-13">13. Payments</a></li>
+<li><a href="#s-14">14. Currency Conversions</a></li>
+<li><a href="#s-15">15. Finality of Payments</a></li>
+<li><a href="#s-16">16. Information on Payments</a></li>
+<li><a href="#s-17">17. Unauthorised Payments</a></li>
+<li><a href="#s-18">18. Closing your Payment Account</a></li>
+<li><a href="#s-19">19. Changes to these Terms</a></li>
+<li><a href="#s-20">20. Safety and security measures</a></li>
+<li><a href="#s-21">21. Tax</a></li>
+<li><a href="#s-22">22. Data protection</a></li>
+<li><a href="#s-23">23. Intellectual property</a></li>
+<li><a href="#s-24">24. Termination and suspension of these Terms</a></li>
+<li><a href="#s-25">25. Complaints and Customer Support</a></li>
+<li><a href="#s-26">26. Governing law</a></li>
+<li><a href="#annex-a">Annex A. Fees and Charges</a></li>
+<li><a href="#schedule-1">Schedule 1. Card Service Terms</a></li>
+<li><a href="#schedule-2">Schedule 2. Fx Service Terms</a></li>
+</ol>
+</nav>
+<h2 id="s-1"><span class="n">1.</span>These Terms</h2>
+<div class="cl l2" id="c-1.1"><span class="n">1.1</span><div>These Equals Money General Terms and Conditions (the "<strong>Terms</strong>") form a legal agreement between Equals Money Europe SA ("<strong>Equals Money</strong>", "<strong>us</strong>" or "<strong>we</strong>"); and you or the entity you represent ("<strong>you</strong>" or "<strong>your</strong>"), for the purpose of providing you with our Services.</div></div>
+<div class="cl l2" id="c-1.2"><span class="n">1.2</span><div>These Terms apply from the date you first access or use the Services (the "<strong>Commencement Date</strong>") and govern your use of the Services.</div></div>
+<div class="cl l2" id="c-1.3"><span class="n">1.3</span><div>By you using the Services, you confirm that you accept and agree to these Terms. If you do not agree to these Terms, you may not use the Services.</div></div>
+<div class="cl l2" id="c-1.4"><span class="n">1.4</span><div>The provider of the Services under these Terms shall be Equals Money Europe SA.</div></div>
+<div class="cl l2" id="c-1.5"><span class="n">1.5</span><div>We may subcontract our obligations under these Terms to third parties as permitted under Applicable Laws.</div></div>
+<div class="cl l2" id="c-1.6"><span class="n">1.6</span><div>You should download a copy of these Terms for future reference. You can always download a copy of the most current version of these Terms from our website. You can also request a copy of these Terms from us at any time.</div></div>
+<h2 id="s-2"><span class="n">2.</span>Definitions</h2>
+<div class="cl l2" id="c-2.1"><span class="n">2.1</span><div>Capitalised terms that are not otherwise defined in these Terms have the meanings given below unless the context otherwise requires.</div></div>
+<div class="defs">
+<div class="def"><div class="term"><p>"<strong>Account Details</strong>"</p></div><div class="meaning"><p>has the meaning given in Section 11.5 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Additional Services</strong>"</p></div><div class="meaning"><p>means the services described in Section 4.1 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>AML Laws</strong>"</p></div><div class="meaning"><p>means the Belgian Act of 18 September 2017 on the Prevention of Money Laundering and Terrorist Financing and on the Restriction of the Use of Cash, as amended, the U.S. Foreign Corrupt Practices Act, as amended, the Canadian Corruption of Foreign Officials Act, as amended, and any Belgian anti-corruption laws (including the Act of 4 July 1989 on Limitation and Control of Election Expenditure for elections to the Chamber of Representatives, Financing and Open Accounting of Political Parties).</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Applicable Laws</strong>"</p></div><div class="meaning"><p>means any applicable law, regulation, rule, policy, judgment, decree, order or directive, at a state or local level, including, without limitation, AML Laws, Sanctions Laws, any regulatory guidelines or interpretations or regulatory permits and licenses issued by governmental or regulatory authorities having jurisdiction over you or us, that are applicable to you or us or your or our business or which either you or us are otherwise subject to, in each case in force from time to time.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Authorised User</strong>"</p></div><div class="meaning"><p>has the meaning given in Section 10.1 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Business Day</strong>"</p></div><div class="meaning"><p>means a day other than a Saturday, Sunday or public holiday in Belgium on which banks are open for normal banking business in Brussels, Belgium.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card</strong>"</p></div><div class="meaning"><p>means Mastercard and/or Visa branded cards issued to you in accordance with the Card Service Terms, as applicable.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card Service</strong>"</p></div><div class="meaning"><p>has the meaning given in Section 4.1.1 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card Service Terms</strong>"</p></div><div class="meaning"><p>means the terms applicable to the Card Service set out in Schedule 1.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card Transaction</strong>"</p></div><div class="meaning"><p>has the meaning given in the Card Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Commencement Date</strong>"</p></div><div class="meaning"><p>has the meaning given in Section 1.2 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>DD Information</strong>"</p></div><div class="meaning"><p>has the meaning given in Section 6.1 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Equals Money Platform</strong>"</p></div><div class="meaning"><p>means the technology platform through which you can access and use the Services.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>EU</strong>"</p></div><div class="meaning"><p>means the European Union.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>EUR</strong>"</p></div><div class="meaning"><p>means Euro, the official currency of the Eurozone.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Eurozone</strong>"</p></div><div class="meaning"><p>means those member states of the EU that have adopted EUR as their official currency.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Fee Changes</strong>"</p></div><div class="meaning"><p>has the meaning given in Section 9.4 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Fees and Charges</strong>"</p></div><div class="meaning"><p>means the fees and charges applicable to the Services as set out in Annex A of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Funding Method</strong>"</p></div><div class="meaning"><p>means each of the methods for adding funds to your Payment Account that we allow from time to time.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Conversion</strong>"</p></div><div class="meaning"><p>has the meaning given in the FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Service</strong>"</p></div><div class="meaning"><p>has the meaning given in 4.1.2 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Service Terms</strong>"</p></div><div class="meaning"><p>means the terms applicable to the FX Service set out in Schedule 2.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Transaction</strong>"</p></div><div class="meaning"><p>has the meaning given in the FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Insolvent</strong>"</p></div><div class="meaning"><p>means, in respect of a person (including for the avoidance of doubt a corporate person), that that person (i) is unable or admits inability to pay its debts as they fall due, (ii) is deemed to, or declared to, be unable to pay its debts under applicable law; (iii) suspends or threatens to suspend making payments on any of its debts; or (iv) by reason of actual or anticipated financial difficulties, commences negotiations with one or more of its creditors with a view to rescheduling any of its indebtedness.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Intellectual Property</strong>"</p></div><div class="meaning"><p>means all patents, patentable rights, copyright, design rights, utility models, trade marks (whether or not any of the above are registered), trade names, rights in domain names, rights in inventions, rights in data, database rights, rights in know-how and confidential information, and all other intellectual and industrial property and similar or analogous rights existing under the laws of any country and all pending applications for and right to apply for or register the same (present, future and contingent, and including all renewals, extensions, revivals and all accrued rights of action).</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Mastercard</strong>"</p></div><div class="meaning"><p>means Mastercard International.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>NBB</strong>"</p></div><div class="meaning"><p>means the National Bank of Belgium or any successor or replacement body.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Network</strong>"</p></div><div class="meaning"><p>means any scheme governing the issuance, use and acceptance of a Payment Method.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Network Rules</strong>"</p></div><div class="meaning"><p>means all applicable rules and regulations of Networks and operating guidelines, policies, procedures, manuals, announcements, bulletins and other requirements issued by the Networks from time to time.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Payment Account</strong>"</p></div><div class="meaning"><p>means a payment account provided to you in accordance with these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Payment Method</strong>"</p></div><div class="meaning"><p>means any Card or alternative (i.e. non-card) payment method used to carry out payments.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Payment Request</strong>"</p></div><div class="meaning"><p>has the meaning given in 13.1 of these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Personal Data</strong>"</p></div><div class="meaning"><p>any information about or relating to an identified or reasonably identifiable individual, including any information that falls within the meaning of “personal information” or “personal data” in the General Data Protection Regulation (EU) 2016/679 , including some or more of an individual’s name, mobile phone number, address, date of birth, citizenship, place of birth, email addresses, identity documents (and their details), credit reference data, employment data, alternative phone numbers, social accounts, instant message addresses, device and fingerprint characteristics (whether collected using internal or third party applications) and any other details as agreed from time to time.</p></div></div>
+<div class="def"><div class="term"><p><strong>“Programme Partner Platform</strong>”</p></div><div class="meaning"><p>means the technology platform through which you can access and use the Services.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>PSD2</strong>"</p></div><div class="meaning"><p>means Directive (EU) 2015/2366 of the European Parliament and of the Council of 25 November 2015 on payment services in the internal market.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Regulatory Authority</strong>"</p></div><div class="meaning"><p>means any governmental or regulatory authority, and/or any self-regulatory authority, governmental department, agency, commission, board, tribunal, crown corporation, or court or other law, rule or regulation making entity having jurisdiction over any of us or you and/or our businesses or any part or subdivision thereof in any territory in which the Services are made available or any local authority, district or other subdivision thereof (including any Tax Authority and, in respect of Belgium, the NBB) and any body which succeeds or replaces them.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Reversal</strong>"</p></div><div class="meaning"><p>means the reversal, return or claw back for any reason of funds received by you including where initiated by you in relation to funds added by you to your Payment Account with a Funding Method.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Sanctions Laws</strong>"</p></div><div class="meaning"><p>means any economic sanctions laws, regulations, embargoes or restrictive measures including the Sanctions List administered, enacted or enforced by: (i) the United States government; (ii) the United Nations; (iii) Belgium, (iv) the European Union; (v) the United Kingdom; or (vi) the respective governmental institutions and agencies of any of the foregoing, including without limitation, the Office of Foreign Assets Control of the US Department of Treasury ("<strong>OFAC</strong>"), the United States Department of State, and Her Majesty's Treasury (together "<strong>Sanctions Authorities</strong>").</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Sanctions List</strong>"</p></div><div class="meaning"><p>means the "Specially Designated Nationals and Blocked Persons" list issued by OFAC, the Consolidated List of Financial Sanctions Targets issued by Her Majesty's Treasury, or any similar list issued or maintained or made public by any of the Sanctions Authorities.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Security Credentials</strong>"</p></div><div class="meaning"><p>means any password, PIN, access code, answer to security questions or similar that enables you to use or access the Services or the Equals Money Platform, or verify your, or an Authorised User's, identity to us.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>SEPA</strong>"</p></div><div class="meaning"><p>means the Single Euro Payment Area.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Service Provider</strong>"</p></div><div class="meaning"><p>means the entity identified as the Service Provider in the relevant Service Schedule.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Service Schedule</strong>"</p></div><div class="meaning"><p>means each service schedule attached to, and forming part of, these Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Services</strong>"</p></div><div class="meaning"><p>means the Services we provide in accordance with these Terms including (unless the context otherwise requires) any Additional Services you have been approved for.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Supported Currency</strong>"</p></div><div class="meaning"><p>means a currency in which a Payment Account may be denominated and in which we allow you to make payments or FX Transactions from time to time.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Tax</strong>" or "<strong>Taxes</strong>"</p><p>"<strong>Tax Authority</strong>"</p><p>"<strong>VAT</strong>"</p><p>"<strong>Visa</strong>"</p></div><div class="meaning"><p>means any tax, levy, impost, duty or other charge, fee, deduction or withholding of a similar nature,  and any penalty, surcharge or interest payable in connection with the failure to pay, or delay in paying, any of these.</p><p>means any authority or person, whether of the UK, part of the UK or elsewhere, competent to impose, assess or collect any Tax.</p><p>means any Tax in the nature of goods and services tax, consumption tax, supply or value added tax,, sales and use tax, goods and services tax (GST) turnover tax, business tax (including gross receipts or gross business receipt tax) or any similar Tax in any jurisdiction.</p><p>means Visa Europe Limited.</p></div></div>
+</div>
+<div class="cl l2" id="c-2.2"><span class="n">2.2</span><div>Unless the context otherwise requires, use of the singular includes the plural and vice versa.</div></div>
+<div class="cl l2" id="c-2.3"><span class="n">2.3</span><div>A reference to a statute or statutory provision is a reference to it as amended, extended or re-enacted from time to time.</div></div>
+<div class="cl l2" id="c-2.4"><span class="n">2.4</span><div>References to you or Equals Money will include any successors, permitted assignees or transferees unless stated otherwise.</div></div>
+<h2 id="s-3"><span class="n">3.</span>Use of the Services and Regulatory Information</h2>
+<div class="cl l2" id="c-3.1"><span class="n">3.1</span><div>Equals Money will provide the Services in accordance with these Terms.</div></div>
+<div class="cl l2" id="c-3.2"><span class="n">3.2</span><div>The provider of the Payment Account and related payment services in accordance with these Terms is Equals Money Europe SA.</div></div>
+<div class="cl l2" id="c-3.3"><span class="n">3.3</span><div>Equals Money Europe SA is a public limited liability (naamloze vennootschap / société anonyme) company registered in Belgium with the Belgian Crossroads Bank for Enterprises under number 0849.185.510, and whose registered office address is  Floor 4, Avenue Louise 54, Brussels, 1000, Belgium. Equals Money Europe SA is authorised as a payment institution by the NBB.</div></div>
+<div class="cl l2" id="c-3.4"><span class="n">3.4</span><div>Subject to Section 3.5 of these Terms, you may use the Services and any relevant Additional Services from the Commencement Date.</div></div>
+<div class="cl l2" id="c-3.5"><span class="n">3.5</span><div>You may not use the Services unless and until you have provided us with any DD Information we have requested in accordance with Section 6 of these Terms.</div></div>
+<h2 id="s-4"><span class="n">4.</span>Additional Services</h2>
+<div class="cl l2" id="c-4.1"><span class="n">4.1</span><div>If you have been approved to receive any of the following additional services ("<strong>Additional Services</strong>"), the applicable Service Schedule shall apply in addition to these Terms:</div></div>
+<div class="cl l3" id="c-4.1.1"><span class="n">4.1.1</span><div>the "<strong>Card Service</strong>" – the issuance of Cards and related payment services in accordance with the Card Service Terms; and</div></div>
+<div class="cl l3" id="c-4.1.2"><span class="n">4.1.2</span><div>the "<strong>FX Service</strong>" – the provision of spot FX transactions and FX forward transactions in accordance with the FX Service Terms.</div></div>
+<h2 id="s-5"><span class="n">5.</span>Service Schedules and Order of Precedence</h2>
+<p class="cont">The Service Schedules set out additional terms that apply to particular Additional Services. If these Terms conflict with any provision of a Service Schedule, the provision of the Service Schedule shall prevail, but only in relation to the particular Service to which that Service Schedule applies. Otherwise, these Terms shall prevail.</p>
+<h2 id="s-6"><span class="n">6.</span>Due Diligence Information</h2>
+<div class="cl l2" id="c-6.1"><span class="n">6.1</span><div>You shall provide us with any information "<strong>DD Information</strong>" we request from time to time for the purposes of conducting customer due diligence checks and/or ongoing monitoring as required under Applicable Laws. This will include, but is not limited to, any information we require to verify your identity and source of funds in accordance with AML Laws and any Personal Data you provide as part of this process shall be held in accordance with Applicable Laws.</div></div>
+<div class="cl l2" id="c-6.2"><span class="n">6.2</span><div>You shall notify us of any changes to DD Information as soon as reasonably practicable.</div></div>
+<div class="cl l2" id="c-6.3"><span class="n">6.3</span><div>You agree that we may provide DD Information to Networks or other third parties for the purposes of complying with Network Rules or Applicable Laws.</div></div>
+<div class="cl l2" id="c-6.4"><span class="n">6.4</span><div>You agree that your failure to comply with this Section 6 will be a material breach of these Terms and we shall have the right to terminate these Terms.</div></div>
+<h2 id="s-7"><span class="n">7.</span>Our obligations</h2>
+<p class="cont">We shall provide the Services and the Additional Services in accordance with these Terms and the terms of any applicable Service Schedule, Applicable Laws and the Network Rules.</p>
+<h2 id="s-8"><span class="n">8.</span>Your obligations</h2>
+<div class="cl l2" id="c-8.1"><span class="n">8.1</span><div>You shall at all times comply with:</div></div>
+<div class="cl l3" id="c-8.1.1"><span class="n">8.1.1</span><div>these Terms and the terms of any applicable Service Schedule;</div></div>
+<div class="cl l3" id="c-8.1.2"><span class="n">8.1.2</span><div>Applicable Laws; and</div></div>
+<div class="cl l3" id="c-8.1.3"><span class="n">8.1.3</span><div>the Network Rules.</div></div>
+<div class="cl l2" id="c-8.2"><span class="n">8.2</span><div>You shall pay the Fees and Charges when they become due.</div></div>
+<div class="cl l2" id="c-8.3"><span class="n">8.3</span><div>You acknowledge and agree that if you do not do so, this shall be a material breach of these Terms and we shall have the right to terminate these Terms.</div></div>
+<h2 id="s-9"><span class="n">9.</span>Fees and Charges</h2>
+<div class="cl l2" id="c-9.1"><span class="n">9.1</span><div>The Fees and Charges applicable to the Services are set out in Annex A of these Terms.</div></div>
+<div class="cl l2" id="c-9.2"><span class="n">9.2</span><div>We may refuse to process your transaction(s) or provide any other Services to you until we have received the Fees and Charges from you (or any other amount due and payable to us).</div></div>
+<div class="cl l2" id="c-9.3"><span class="n">9.3</span><div>You agree that we are authorised to deduct our Fees and Charges, any applicable Reversal amounts, or any amounts you owe us from your Payment Account. If you do not have sufficient funds in your Payment Account to cover these amounts, we may refuse to execute pending or future transactions or provide any Services to you and we may deduct funds sent to us for Services in the future.</div></div>
+<div class="cl l2" id="c-9.4"><span class="n">9.4</span><div>We may, in our absolute discretion, waive, amend or increase our fees or introduce new fees from time to time ("<strong>Fee Changes</strong>"). Where we do so, we will notify you two (2) months before the Fees Changes become effective.</div></div>
+<h2 id="s-10"><span class="n">10.</span>Authorised Users</h2>
+<div class="cl l2" id="c-10.1"><span class="n">10.1</span><div>You may appoint authorised users (each an "<strong>Authorised User</strong>") to use and access information about the Services under these Terms on your behalf.</div></div>
+<div class="cl l2" id="c-10.2"><span class="n">10.2</span><div>You must notify us of each Authorised User by taking the relevant steps as shown on the Equals Money Platform.</div></div>
+<div class="cl l2" id="c-10.3"><span class="n">10.3</span><div>You must inform us promptly if any detail previously provided about an Authorised User changes or is incorrect.</div></div>
+<div class="cl l2" id="c-10.4"><span class="n">10.4</span><div>You shall ensure that your Authorised Users comply with these Terms and the terms of any applicable Service Schedule, and you shall be responsible for any acts or omissions of your Authorised Users.</div></div>
+<div class="cl l2" id="c-10.5"><span class="n">10.5</span><div>You agree that your Authorised Users may give instructions to us in relation to the Services on your behalf and that we may rely on instructions given by Authorised Users unless and until you notify us in writing that such Authorised User is no longer authorised to do so.</div></div>
+<h2 id="s-11"><span class="n">11.</span>Your Payment Account</h2>
+<div class="cl l2" id="c-11.1"><span class="n">11.1</span><div><strong>Opening a Payment Account. </strong>You may request a Payment Account by either following the steps set out on the Equals Money Platform or on the Programme Partner Platform as applicable.</div></div>
+<div class="cl l2" id="c-11.2"><span class="n">11.2</span><div>We may refuse to open a Payment Account for you or close, suspend or otherwise limit your access to your Payment Account if we are unable to verify, or you fail to provide, any information we have requested in accordance with the Terms, or the information you have provided is not correct, or we are required to do so by Applicable Laws or Regulatory Authority.</div></div>
+<div class="cl l2" id="c-11.3"><span class="n">11.3</span><div>Your Payment Account allows you to:</div></div>
+<div class="cl l3" id="c-11.3.1"><span class="n">11.3.1</span><div>hold funds;</div></div>
+<div class="cl l3" id="c-11.3.2"><span class="n">11.3.2</span><div>spend, transfer, and receive funds; and</div></div>
+<div class="cl l3" id="c-11.3.3"><span class="n">11.3.3</span><div>convert funds from one Supported Currency to another Supported Currency.</div></div>
+<div class="cl l2" id="c-11.4"><span class="n">11.4</span><div>You acknowledge and agree that:</div></div>
+<div class="cl l3" id="c-11.4.1"><span class="n">11.4.1</span><div>you shall not earn any interest on the funds you hold in your Payment Account;</div></div>
+<div class="cl l3" id="c-11.4.2"><span class="n">11.4.2</span><div>you shall only hold funds in Supported Currencies;</div></div>
+<div class="cl l3" id="c-11.4.3"><span class="n">11.4.3</span><div>you shall only hold funds that belong to you in your Payment Account; and</div></div>
+<div class="cl l3" id="c-11.4.4"><span class="n">11.4.4</span><div>you shall not place a charge or any other form of security over funds held in your Payment Account.</div></div>
+<div class="cl l2" id="c-11.5"><span class="n">11.5</span><div><strong>Account Details.</strong> We will provide you with details ("<strong>Account Details</strong>") via the Equals Money Platform that allow you or a third party to send funds to your Payment Account.</div></div>
+<div class="cl l2" id="c-11.6"><span class="n">11.6</span><div><strong>Suspension of your Payment Account</strong>. We may suspend your Payment Account or otherwise restrict its functionality if we are required to do so by Applicable Laws, any Regulatory Authority, our commercial partners or our service providers including, but not limited to, payments or banking services providers, or we reasonably suspect:</div></div>
+<div class="cl l3" id="c-11.6.1"><span class="n">11.6.1</span><div>the security of your Payment Account has, or is likely to be, compromised;</div></div>
+<div class="cl l3" id="c-11.6.2"><span class="n">11.6.2</span><div>fraudulent or unauthorised use of your Payment Account; or</div></div>
+<div class="cl l3" id="c-11.6.3"><span class="n">11.6.3</span><div>you have breached these Terms.</div></div>
+<div class="cl l2" id="c-11.7"><span class="n">11.7</span><div>We will notify you if we take any action under Section 11.6 unless we are prevented from doing so under Applicable Laws or to do so would compromise our security measures.</div></div>
+<h2 id="s-12"><span class="n">12.</span>Adding money to your Payment Account</h2>
+<div class="cl l2" id="c-12.1"><span class="n">12.1</span><div>You may add funds to your Payment Account with a Funding Method by following the relevant instructions on the Equals Money Platform Programme or the Programme Partner Platform as applicable.</div></div>
+<div class="cl l2" id="c-12.2"><span class="n">12.2</span><div>You are responsible for any fees or charges charged by a third party in relation to your use of a Funding Method to add funds to your Payment Account. We will only credit the amount we receive from a Funding Method to your Payment Account.</div></div>
+<div class="cl l2" id="c-12.3"><span class="n">12.3</span><div>We may place limits on the amount of funds you can hold in your Payment Account or the amount that may be added with a particular Funding Method from time to time.</div></div>
+<div class="cl l2" id="c-12.4"><span class="n">12.4</span><div>We will generally credit funds to your Payment Account when we receive them. The provider of your Funding Method is responsible for transferring funds to us.</div></div>
+<div class="cl l2" id="c-12.5"><span class="n">12.5</span><div>We may refuse to credit or delay the crediting of funds to your Payment Account in accordance with Applicable Laws.</div></div>
+<div class="cl l2" id="c-12.6"><span class="n">12.6</span><div>We may occasionally credit funds to your Payment Account before we receive funds, but we have no obligation to do so.</div></div>
+<div class="cl l2" id="c-12.7"><span class="n">12.7</span><div>If we have credited funds to your Payment Account in accordance with Section 12.6 and we do not receive the funds, we may debit this amount from your Payment Account.</div></div>
+<div class="cl l2" id="c-12.8"><span class="n">12.8</span><div>If we debit your Payment Account in accordance with Section 12.7 and this results in a negative balance on your Payment Account, you agree that such amount as is required to return your Payment Account to a positive or zero balance shall be recoverable by us as a debt and such debt shall be immediately due and payable by you to us.</div></div>
+<div class="cl l2" id="c-12.9"><span class="n">12.9</span><div>Where permitted under Applicable Laws, you agree that we may charge you a fee of EUR 50 if we need to investigate or take other actions in relation to a Reversal.</div></div>
+<h2 id="s-13"><span class="n">13.</span>Payments</h2>
+<div class="cl l2" id="c-13.1"><span class="n">13.1</span><div><strong>Payment Requests</strong>. You may instruct us to make a payment (a "<strong>Payment Request</strong>") by following the relevant instructions and providing the requested information as prompted in the Equals Money Platform or in the Programme Partner Platform.</div></div>
+<div class="cl l2" id="c-13.2"><span class="n">13.2</span><div>If you submit a Payment Request after 5pm on a Business Day or on a day that is not a Business Day (e.g., a weekend or bank holiday), your Payment Request will be deemed to be received on the next Business Day.</div></div>
+<div class="cl l2" id="c-13.3"><span class="n">13.3</span><div>Payment Requests for payments that are to be executed at a future date will be deemed to be received on the date on which you request the payment to be made.</div></div>
+<div class="cl l2" id="c-13.4"><span class="n">13.4</span><div>We may decline a Payment Request for any reason in accordance with Applicable Laws. We may provide our reason for declining a Payment Request unless we are prevented from doing so under Applicable Laws.</div></div>
+<div class="cl l2" id="c-13.5"><span class="n">13.5</span><div>We may delay the execution of a payment in accordance with Applicable Laws if, without limitation, we need to confirm that the payment has been authorised by you or we require further information from you.</div></div>
+<div class="cl l2" id="c-13.6"><span class="n">13.6</span><div><strong>Execution of Payments</strong>. Once we have received your Payment Request, we will start to execute your payment immediately in accordance with the relevant Payment Request.</div></div>
+<div class="cl l2" id="c-13.7"><span class="n">13.7</span><div>You will only be able to cancel or change a Payment Request where we are informed of the proposed cancellation or change before the end of the Business Day preceding the day of the proposed transaction.</div></div>
+<div class="cl l2" id="c-13.8"><span class="n">13.8</span><div>We will only execute payments if you have sufficient funds in your Payment Account for the amount of the payment and any Fees and Charges or any other fees, charges or other amounts that you owe us under these Terms.</div></div>
+<div class="cl l2" id="c-13.9"><span class="n">13.9</span><div>We may place limits on the types, value and number of payments you can make from time to time.</div></div>
+<div class="cl l2" id="c-13.10"><span class="n">13.10</span><div><strong>Completion of Payments</strong>. We shall provide the estimated completion time of payments when you make a Payment Request in accordance with Section 13.1.</div></div>
+<div class="cl l2" id="c-13.11"><span class="n">13.11</span><div>We will use reasonable efforts to ensure that your payment is received by the payee within the timeframe notified to you. However, you acknowledge and agree that we cannot control how long it takes for the payee's payment provider to credit or otherwise make available funds to the payee.</div></div>
+<div class="cl l2" id="c-13.12"><span class="n">13.12</span><div>For the following types of payments:</div></div>
+<div class="cl l3" id="c-13.12.1"><span class="n">13.12.1</span><div>payments in EUR;</div></div>
+<div class="cl l3" id="c-13.12.2"><span class="n">13.12.2</span><div>domestic payments in the currency of an EU member state other than EUR; and</div></div>
+<div class="cl l3" id="c-13.12.3"><span class="n">13.12.3</span><div>payment transactions involving only one currency conversion between EUR and the currency of an EU member state outside the Eurozone (provided that the required currency conversion is carried out in the EU member state outside the EUR area concerned and, in the case of cross-border payment transactions, the cross-border transfer takes place in EUR),</div></div>
+<p class="cont">we shall credit the amount of the payment to the payee's payment service provider by the end of the Business Day after the day of the Payment Request.</p>
+<div class="cl l2" id="c-13.13"><span class="n">13.13</span><div>Payments in other currencies could take up to three (3) Business Days for your payment to be credited to the payee's payment service provider.</div></div>
+<h2 id="s-14"><span class="n">14.</span>Currency Conversions</h2>
+<p class="cont">If you wish to fund a payment in a different Supported Currency to the Supported Currency in which the payment will be made, we will perform the currency conversion for you in accordance with the FX Service Terms.</p>
+<h2 id="s-15"><span class="n">15.</span>Finality of Payments</h2>
+<p class="cont">When you make a payment, the settlement and payout to the payee are final and irrevocable unless otherwise provided for in these Terms or as provided for under Applicable Laws.</p>
+<h2 id="s-16"><span class="n">16.</span>Information on Payments</h2>
+<p class="cont">Records of your transactions will be available in the Equals Money Platform or in the Programme Partner Platform as applicable. You should check your records regularly and notify us immediately (and in any event no later than thirteen (13) months) to report any: (i) suspected or actual unauthorised payment; (ii) incorrectly initiated or executed payments such as those having not been executed, or having been executed late, or where the amount of the payment or the payee is incorrect; (iii) concerns about certain charges and interest you are liable to pay as a result of such transactions; or (iv) other security concerns regarding the Equals Money Platform or the Programme Partner Platform as applicable.</p>
+<h2 id="s-17"><span class="n">17.</span>Unauthorised Payments</h2>
+<div class="cl l2" id="c-17.1"><span class="n">17.1</span><div>Subject to other provisions of this Section 17, if we become aware of an unauthorised payment, we will refund you as soon as practicable and, except as otherwise permitted by the PSRs, no later than the Business Day after we become aware of the unauthorised payment, and restore you to the position you would have been in if the unauthorised payment had not taken place.</div></div>
+<div class="cl l2" id="c-17.2"><span class="n">17.2</span><div>We will have no liability for losses you incur arising from an unauthorised payment which you do not notify us of within thirteen (13) months of the date of the Payment.</div></div>
+<div class="cl l2" id="c-17.3"><span class="n">17.3</span><div>You will be liable for any losses arising out of an unauthorised payment if:</div></div>
+<div class="cl l3" id="c-17.3.1"><span class="n">17.3.1</span><div>we have reasonable grounds to suspect fraudulent behaviour by either you or your Authorised Users; or</div></div>
+<div class="cl l3" id="c-17.3.2"><span class="n">17.3.2</span><div>where you or your Authorised Users have with intent or gross negligence failed to notify us of:</div></div>
+<div class="cl l4"><span class="n">(i)</span><div>the loss, theft, or misappropriation of your Card or Security Credentials; or</div></div>
+<div class="cl l4"><span class="n">(ii)</span><div>the unauthorised payment(s).</div></div>
+<div class="cl l2" id="c-17.4"><span class="n">17.4</span><div>Notwithstanding Section 17.1 of these Terms, you shall be liable for up to EUR 50 (or any other such amount permitted under Applicable Laws) for any losses incurred by you or an Authorised User in respect of unauthorised payments arising from the use of a lost or stolen Card or Security Credentials save that we will not hold you liable for such an amount if the unauthorised payment was caused either by our acts or omissions, or those of a third party expressly carrying out activities on our behalf.</div></div>
+<div class="cl l2" id="c-17.5"><span class="n">17.5</span><div>Where we provide you with information regarding potential fraud in relation to the Services, we may incorporate your response (or lack thereof) into our assessment of whether there has been fraudulent behaviour in relation to your Payment Account or Authorised Users.</div></div>
+<div class="cl l2" id="c-17.6"><span class="n">17.6</span><div>If you have given us incorrect instructions in relation to a payment, we may reasonably assist you to recover the funds, where possible, but do not guarantee that this would be successful.</div></div>
+<div class="cl l2" id="c-17.7"><span class="n">17.7</span><div>Where we do refund you for an unauthorised payment, we will credit value date your Payment Account no later than the date on which the amount of the unauthorised payment was debited.</div></div>
+<h2 id="s-18"><span class="n">18.</span>Closing your Payment Account</h2>
+<div class="cl l2" id="c-18.1"><span class="n">18.1</span><div>You may close your Payment Account by taking the steps set out on the Equals Money Platform or on the Programme Partner Platform as applicable.</div></div>
+<div class="cl l2" id="c-18.2"><span class="n">18.2</span><div>We may not allow you to close your Payment Account if you have a negative balance, pending payment, an open dispute or claim in relation to a payment, or where required by Applicable Laws or a Regulatory Authority.</div></div>
+<h2 id="s-19"><span class="n">19.</span>Changes to these Terms</h2>
+<div class="cl l2" id="c-19.1"><span class="n">19.1</span><div>We may change these Terms (including the Fees and Charges) by giving you two (2) months' prior written notice. We will consider that you have accepted the proposed changes if you do not terminate these terms by giving us written notice during the relevant notice period.</div></div>
+<div class="cl l2" id="c-19.2"><span class="n">19.2</span><div>We may also make some changes immediately, without prior notice, if those changes:</div></div>
+<div class="cl l3" id="c-19.2.1"><span class="n">19.2.1</span><div>are favourable to you;</div></div>
+<div class="cl l3" id="c-19.2.2"><span class="n">19.2.2</span><div>are required by Applicable Laws or we are requested to do so by a Regulatory Authority; or</div></div>
+<div class="cl l3" id="c-19.2.3"><span class="n">19.2.3</span><div>relate to the addition of a new service or extra functionality of our Services or Additional Services and do not affect terms relating to the existing Services or Additional Services.</div></div>
+<div class="cl l2" id="c-19.3"><span class="n">19.3</span><div>You should stop using our Services if you do not agree to these changes. If you keep using our Services after we have announced such a change, we will treat you as having accepted the change.</div></div>
+<h2 id="s-20"><span class="n">20.</span>Safety and security measures</h2>
+<div class="cl l2" id="c-20.1"><span class="n">20.1</span><div>You must not allow any person other than your Authorised Users to access the Services or the Equals Money Platform or the Programme Partner Platform as applicable.</div></div>
+<div class="cl l2" id="c-20.2"><span class="n">20.2</span><div>You must not disclose your Security Credentials to anyone other than Authorised Users and shall make reasonable efforts to protect the security of your Security Credentials.</div></div>
+<div class="cl l2" id="c-20.3"><span class="n">20.3</span><div>Any Security Credentials that you create must not use identifiable numbers, words or phrases that could be easily guessed by someone else.</div></div>
+<div class="cl l2" id="c-20.4"><span class="n">20.4</span><div>If you suspect that someone else has access to or knows your Security Credentials, you must notify us of this immediately.</div></div>
+<h2 id="s-21"><span class="n">21.</span>Tax</h2>
+<div class="cl l2" id="c-21.1"><span class="n">21.1</span><div>Fees and Charges are exclusive of  all Taxes (save where expressly stated otherwise).  If any supply made by us of the Services is subject to VAT, you must pay in addition to any Fees, Charges or other consideration for the supply, an amount equal to the VAT payable.</div></div>
+<div class="cl l2" id="c-21.2"><span class="n">21.2</span><div>You are solely responsible for determining which, if any, Taxes apply to the payments you make or receive in connection with your use of the Services and it is your responsibility to collect, report and pay any such Taxes due.</div></div>
+<div class="cl l2" id="c-21.3"><span class="n">21.3</span><div>If we are required by Applicable Laws to collect or withhold any Taxes, we may deduct those Taxes from amounts otherwise owed to you and pay those Taxes to the appropriate authority.</div></div>
+<h2 id="s-22"><span class="n">22.</span>Data protection</h2>
+<div class="cl l2" id="c-22.1"><span class="n">22.1</span><div>By accepting these Terms, you hereby consent to us accessing, processing, and/or retaining any Personal Data necessary to provide Services, whether in relation to you or your Authorised Users.</div></div>
+<div class="cl l2" id="c-22.2"><span class="n">22.2</span><div>Any Personal Data you provide to us in connection with these Terms shall be held in accordance with our Privacy Policy. Please review our Privacy Policy for more information on how we use and protect your Personal Data and privacy rights.</div></div>
+<h2 id="s-23"><span class="n">23.</span>Intellectual property</h2>
+<div class="cl l2" id="c-23.1"><span class="n">23.1</span><div>Nothing in these Terms shall cause the ownership of any or our Intellectual Property to be transferred to you.</div></div>
+<div class="cl l2" id="c-23.2"><span class="n">23.2</span><div>We and/or our licensors shall, remain the owner of all Intellectual Property in our brands, trade marks and logos, product(s) and the Services. Except as expressly permitted by these Terms you may not use our Intellectual Property without our prior written consent.</div></div>
+<div class="cl l2" id="c-23.3"><span class="n">23.3</span><div>Subject to the provisions of these Terms, you are granted a non-transferable, non-exclusive licence to access and use the Services. Except as expressly set out in these Terms all rights in and to the Services are reserved to us.</div></div>
+<h2 id="s-24"><span class="n">24.</span>Termination and suspension of these Terms</h2>
+<div class="cl l2" id="c-24.1"><span class="n">24.1</span><div>We may terminate these Terms at any time by giving you two (2) months' notice.</div></div>
+<div class="cl l2" id="c-24.2"><span class="n">24.2</span><div>We may without notice suspend or terminate any part or all of these Terms or any Service Schedule or any of the Services or Additional Services or block payments if:</div></div>
+<div class="cl l3" id="c-24.2.1"><span class="n">24.2.1</span><div>we suspect criminal activity on your Payment Account or fraudulent use of the Services;</div></div>
+<div class="cl l3" id="c-24.2.2"><span class="n">24.2.2</span><div>we reasonably believe you have fraudulently requested a refund of an unauthorised payment;</div></div>
+<div class="cl l3" id="c-24.2.3"><span class="n">24.2.3</span><div>we reasonably believe you have breached Applicable Laws or Network Rules;</div></div>
+<div class="cl l3" id="c-24.2.4"><span class="n">24.2.4</span><div>you have materially breached these Terms or any Service Schedule;</div></div>
+<div class="cl l3" id="c-24.2.5"><span class="n">24.2.5</span><div>you have provided false or inaccurate information, or we have been able to verify any information you have provided;</div></div>
+<div class="cl l3" id="c-24.2.6"><span class="n">24.2.6</span><div>we are unable to obtain satisfactory DD Information on you (or, where applicable) your beneficial owners;</div></div>
+<div class="cl l3" id="c-24.2.7"><span class="n">24.2.7</span><div>you are Insolvent; or</div></div>
+<div class="cl l3" id="c-24.2.8"><span class="n">24.2.8</span><div>we are required to do so by a Regulatory Authority or Network or are otherwise required to do so under Applicable Laws.</div></div>
+<div class="cl l2" id="c-24.3"><span class="n">24.3</span><div>For the avoidance of doubt, the termination of these Terms will automatically result in the termination of any Service Schedule.</div></div>
+<h2 id="s-25"><span class="n">25.</span>Complaints and Customer Support</h2>
+<div class="cl l2" id="c-25.1"><span class="n">25.1</span><div>If you feel we have not met your expectations or would like to make a complaint please get in touch and we will investigate your concerns.</div></div>
+<div class="cl l2" id="c-25.2"><span class="n">25.2</span><div>If you require customer support we will use commercially reasonable efforts to provide you with that support in the English language.</div></div>
+<div class="cl l2" id="c-25.3"><span class="n">25.3</span><div>Our contact details are as follows:</div></div>
+<div class="cl l3" id="c-25.3.1"><span class="n">25.3.1</span><div>Tel: + 32 0800 13 526</div></div>
+<div class="cl l3" id="c-25.3.2"><span class="n">25.3.2</span><div>Complaints: <a href="mailto:complaints@equalsmoney.com">complaints@equalsmoney.com</a></div></div>
+<div class="cl l2" id="c-25.4"><span class="n">25.4</span><div>If you are not happy with how we have resolved your complaint, you may forward your complaint to the Ombudsman for financial services (<em>Ombudsfin</em>) by:</div></div>
+<div class="cl l3" id="c-25.4.1"><span class="n">25.4.1</span><div>Tel: +32 2 545 77 70 (from Monday to Thursday in the morning);</div></div>
+<div class="cl l3" id="c-25.4.2"><span class="n">25.4.2</span><div>Address: North Gate II, Koning Albert II-laan 8 box 2, 1000 Brussels, Belgium</div></div>
+<div class="cl l3" id="c-25.4.3"><span class="n">25.4.3</span><div>Email: <a href="mailto:ombudsman@ombudsfin.be">ombudsman@ombudsfin.be</a></div></div>
+<div class="cl l3" id="c-25.4.4"><span class="n">25.4.4</span><div>Online: https://www.ombudsfin.be/en/introduce-a-complaint</div></div>
+<div class="cl l2" id="c-25.5"><span class="n">25.5</span><div>Alternatively, you may also forward your complaint to the Economic Inspection Department of the Federal Public Service Economy (Algemene Directie Economische Inspectie / La Direction générale de l'Inspection économique) by:</div></div>
+<div class="cl l3" id="c-25.5.1"><span class="n">25.5.1</span><div>Tel: +32 2 277 54 84.</div></div>
+<div class="cl l3" id="c-25.5.2"><span class="n">25.5.2</span><div>Address: North Gate III, Koning Albert II-laan 16, 1000 Brussels, Belgium</div></div>
+<div class="cl l3" id="c-25.5.3"><span class="n">25.5.3</span><div>Online: <a href="https://meldpunt.belgie.be/meldpunt/en/welcome">https://meldpunt.belgie.be/meldpunt/en/welcome</a></div></div>
+<div class="cl l3" id="c-25.5.4"><span class="n">25.5.4</span><div>More information can be found on <a href="https://economie.fgov.be/en/about-fps-economy/where-and-how-report-problem">https://economie.fgov.be/en/about-fps-economy/where-and-how-report-problem</a></div></div>
+<h2 id="s-26"><span class="n">26.</span>Governing law</h2>
+<div class="cl l2" id="c-26.1"><span class="n">26.1</span><div>These Terms will be governed by and construed in accordance with the laws of Belgium.</div></div>
+<div class="cl l2" id="c-26.2"><span class="n">26.2</span><div>You irrevocably submit to the exclusive jurisdiction of the courts of Belgium over any dispute, controversy or claim (including non-contractual claims) arising under or in connection with these Terms.</div></div>
+<h2 class="part" id="annex-a"><span>ANNEX A</span>Fees and Charges</h2>
+<h2 class="part" id="schedule-1"><span>SCHEDULE 1</span>CARD SERVICE TERMS</h2>
+<h3 id="s1-1"><span class="n">1.</span>Introduction</h3>
+<div class="cl l2" id="s1-1.1"><span class="n">1.1</span><div>If you are a UK Customer, the Service Provider is Equals Money International Limited.</div></div>
+<div class="cl l2" id="s1-1.2"><span class="n">1.2</span><div>If you are a UK Customer, Equals Money International Limited is the issuer of the Cards.</div></div>
+<div class="cl l2" id="s1-1.3"><span class="n">1.3</span><div>If you are an EEA Customer, the Service Provider is Equals Money Europe SA.</div></div>
+<div class="cl l2" id="s1-1.4"><span class="n">1.4</span><div>If you are an EEA Customer, Equals Money Europe SA is the issuer of the Cards.</div></div>
+<div class="cl l2" id="s1-1.5"><span class="n">1.5</span><div>Where we agree to provide the Card Service to you, the following terms ("<strong>Card Service Terms</strong>") will apply in addition to the Terms and shall govern the use of Cards by you and any Additional Cardholders.</div></div>
+<div class="cl l2" id="s1-1.6"><span class="n">1.6</span><div>You agree to pay the Fees and Charges applicable to the Card Service.</div></div>
+<div class="cl l2" id="s1-1.7"><span class="n">1.7</span><div>Unless otherwise defined in section 11 of this Service Schedule, all capitalised terms have the meanings given in section 2 of the Terms.</div></div>
+<div class="cl l2" id="s1-1.8"><span class="n">1.8</span><div>By requesting a Card, you accept and agree to these Card Service Terms.</div></div>
+<div class="cl l2" id="s1-1.9"><span class="n">1.9</span><div>If you do not agree to these Card Service Terms, you may not apply for, or use, the Cards.</div></div>
+<h3 id="s1-2"><span class="n">2.</span>Applying for a Card</h3>
+<div class="cl l2" id="s1-2.1"><span class="n">2.1</span><div>You or an Authorised User may request the issuance of a virtual card that is available through the Equals Money Platform or tokenised to a mobile device ("<strong>Virtual Card</strong>") or a physical card ("<strong>Physical Card</strong>") to you or an Additional Cardholder via the Equals Money Platform, over the phone or by email.</div></div>
+<div class="cl l2" id="s1-2.2"><span class="n">2.2</span><div>You agree that you will be bound by any request by an Authorised User for the issuance of a Card.</div></div>
+<div class="cl l2" id="s1-2.3"><span class="n">2.3</span><div>You must provide the required information on Additional Cardholders via the Equals Money Platform, over the phone or by email.</div></div>
+<div class="cl l2" id="s1-2.4"><span class="n">2.4</span><div>We reserve the right to refuse to issue a Card to any person for any reason.</div></div>
+<div class="cl l2" id="s1-2.5"><span class="n">2.5</span><div>Cards may be denominated in a Supported Currency.</div></div>
+<div class="cl l2" id="s1-2.6"><span class="n">2.6</span><div>If we approve your request for a Card, we will:</div></div>
+<div class="cl l3" id="s1-2.6.1"><span class="n">2.6.1</span><div>provide the Card Details to you via the Equals Money Platform if the Card is a Virtual Card; or</div></div>
+<div class="cl l3" id="s1-2.6.2"><span class="n">2.6.2</span><div>send the Card to the address you provide to us, if the Card is a Physical Card.</div></div>
+<div class="cl l2" id="s1-2.7"><span class="n">2.7</span><div>You must comply with any instructions we give to you from time to time regarding the use of Cards whether through the Equals Money Platform or otherwise.</div></div>
+<h3 id="s1-3"><span class="n">3.</span>Card Transactions</h3>
+<div class="cl l2" id="s1-3.1"><span class="n">3.1</span><div>Your Card (whether it is a Physical Card or Virtual Card) must be linked to your Payment Account (a "<strong>Funding Account</strong>").</div></div>
+<div class="cl l2" id="s1-3.2"><span class="n">3.2</span><div>Cards can only be used for Card Transactions up to the value of your balance held in your Funding Account at any given time. We do not provide credit in relation to Card Transactions.</div></div>
+<div class="cl l2" id="s1-3.3"><span class="n">3.3</span><div>You must therefore ensure that your Funding Account has sufficient balance for your purchase or the Card Transaction will be rejected.</div></div>
+<div class="cl l2" id="s1-3.4"><span class="n">3.4</span><div>Where a Card Transaction is made in a different currency to the Funding Account, such a Card Transaction must be paid for in the same currency in which the Funding Account is denominated. Any FX Conversion shall be subject to the FX Service Terms.</div></div>
+<div class="cl l2" id="s1-3.5"><span class="n">3.5</span><div>You are liable for all Card Transactions, and any related Fees and Charges, including transactions with Cards issued to Additional Cardholders.</div></div>
+<div class="cl l2" id="s1-3.6"><span class="n">3.6</span><div>You must only use your Card for lawful purposes. All Cards remain our property, and we may request that you return all Cards to us at any time.</div></div>
+<div class="cl l2" id="s1-3.7"><span class="n">3.7</span><div><strong>Pre-authorisation</strong>. You may pre-authorise the estimated amount of (or a certain portion of) the final amount of a Card Transaction. The amount of the pre-authorisation may be reflected in the balance of your Funding Account and this amount may be made unavailable for future Card Transactions. Any portion of such pre-authorised amount which is not applied towards the Card Transaction will then be made available to you. FX conversions may occur at the point of pre-authorisation if the Card Transaction is not in the currency of the Funding Account.</div></div>
+<div class="cl l2" id="s1-3.8"><span class="n">3.8</span><div><strong>Refunds</strong>. If you receive a refund of a Card Transaction this will be credited to your Funding Account with the amount of the Refund in the currency in which the Funding Account is denominated regardless of the currency in which the Refund was paid. You agree that we shall process any FX Transaction in accordance with the FX Service Terms.</div></div>
+<div class="cl l2" id="s1-3.9"><span class="n">3.9</span><div><strong>Authorisation and suspension of Card Transactions</strong>. We may need to authorise Card Transactions as the issuer of the Card. We may in our reasonable discretion deny authorisation and/or suspend the use of your Card if:</div></div>
+<div class="cl l3" id="s1-3.9.1"><span class="n">3.9.1</span><div>the balance of your Funding Account is insufficient;</div></div>
+<div class="cl l3" id="s1-3.9.2"><span class="n">3.9.2</span><div>the amount of the Card Transaction exceeds any transaction limit we place on your Card from time to time;</div></div>
+<div class="cl l3" id="s1-3.9.3"><span class="n">3.9.3</span><div>we suspect that there is fraud or a security issue;</div></div>
+<div class="cl l3" id="s1-3.9.4"><span class="n">3.9.4</span><div>we suspect that your Card is being used for an illegal purpose;</div></div>
+<div class="cl l3" id="s1-3.9.5"><span class="n">3.9.5</span><div>you have materially breached the Terms or these Card Service Terms; or</div></div>
+<div class="cl l3" id="s1-3.9.6"><span class="n">3.9.6</span><div>where required by Applicable Laws, any Regulatory Authority or, our commercial partners or our service providers including, but not limited to, payments or banking services providers.</div></div>
+<div class="cl l2" id="s1-3.10"><span class="n">3.10</span><div>We will give you notice of any denied Card Transaction or suspension of a Card and the reasons as soon as we can where this would not breach Applicable Laws.</div></div>
+<div class="cl l2" id="s1-3.11"><span class="n">3.11</span><div>Where possible we will do this before the suspension is put in place, unless to do so would compromise our reasonable security measures or otherwise breach Applicable Laws.</div></div>
+<div class="cl l2" id="s1-3.12"><span class="n">3.12</span><div>We will lift the suspension of a Card as soon as practicable after the reasons for the suspension have ceased to exist.</div></div>
+<div class="cl l2" id="s1-3.13"><span class="n">3.13</span><div>Before we authorise a transaction, we may require you to confirm your identity by following certain steps specified by us.</div></div>
+<div class="cl l2" id="s1-3.14"><span class="n">3.14</span><div>You acknowledge and agree that we are not liable to you or any other person for any loss suffered as a result of an authorisation being denied or a Card being suspended.</div></div>
+<div class="cl l2" id="s1-3.15"><span class="n">3.15</span><div><strong>Card Transaction limits</strong>. We may from time to time agree transaction limits on your use of the Card which may be based on the number or amount (whether of individual Card Transactions or in aggregate).</div></div>
+<div class="cl l2" id="s1-3.16"><span class="n">3.16</span><div>Other third-party organisations may impose additional restrictions on the amount of your Card Transactions.</div></div>
+<div class="cl l2" id="s1-3.17"><span class="n">3.17</span><div>We may also place limits on the number of Cards you can request from us each month or that you may have active at any given time.</div></div>
+<h3 id="s1-4"><span class="n">4.</span>No responsibility for goods and services purchased with Cards</h3>
+<div class="cl l2" id="s1-4.1"><span class="n">4.1</span><div>We accept no responsibility for the quality, safety, legality, or any other aspect of any goods or services purchased with a Card. Any complaints about any goods or services purchased with a Card must be resolved directly with a merchant.</div></div>
+<div class="cl l2" id="s1-4.2"><span class="n">4.2</span><div>We are not liable for any loss that may arise if a merchant refuses to accept a Card.</div></div>
+<h3 id="s1-5"><span class="n">5.</span>Card Management</h3>
+<div class="cl l2" id="s1-5.1"><span class="n">5.1</span><div><strong>Cancelling a Card</strong>. An Authorised User can view details of the Cards that have been issued to them and you or any Authorised User may request that any Card be cancelled or temporarily suspended at any time.</div></div>
+<div class="cl l2" id="s1-5.2"><span class="n">5.2</span><div>You acknowledge and agree that you shall remain liable for all Card Transactions with a Card in respect of the period up until the Card is cancelled.</div></div>
+<div class="cl l2" id="s1-5.3"><span class="n">5.3</span><div><strong>Card restrictions</strong>. You may, via the Equals Money Platform, over the phone or by email, request that we place restrictions on:</div></div>
+<div class="cl l3" id="s1-5.3.1"><span class="n">5.3.1</span><div>the maximum amount of a Card Transaction with a Card; and/or</div></div>
+<div class="cl l3" id="s1-5.3.2"><span class="n">5.3.2</span><div>the types of purchases for which a Card may be used.</div></div>
+<div class="cl l2" id="s1-5.4"><span class="n">5.4</span><div>We will inform you through the Equals Money Platform, over the phone or by email if we approve such a request.</div></div>
+<div class="cl l2" id="s1-5.5"><span class="n">5.5</span><div>It is your responsibility to notify each Additional Cardholder of any restrictions that apply to a Card.</div></div>
+<h3 id="s1-6"><span class="n">6.</span>Safety and security</h3>
+<div class="cl l2" id="s1-6.1"><span class="n">6.1</span><div>You acknowledge and agree that:</div></div>
+<div class="cl l3" id="s1-6.1.1"><span class="n">6.1.1</span><div>only you or an Authorised User can use a Card issued to you; and</div></div>
+<div class="cl l3" id="s1-6.1.2"><span class="n">6.1.2</span><div>only Additional Cardholders may use a Card that has been issued to them.</div></div>
+<div class="cl l2" id="s1-6.2"><span class="n">6.2</span><div>You must regularly monitor your Funding Account to make sure no unauthorised Card Transactions have occurred.</div></div>
+<div class="cl l2" id="s1-6.3"><span class="n">6.3</span><div>You must comply with the safety and security measures in respect of Cards as set out in section 6 of this Service Schedule and ensure that any Additional Cardholders do the same.</div></div>
+<div class="cl l2" id="s1-6.4"><span class="n">6.4</span><div>You must also comply with any additional security requirements we notify to you from time to time and ensure that any Additional Cardholders do the same.</div></div>
+<div class="cl l2" id="s1-6.5"><span class="n">6.5</span><div>You acknowledge and agree that we may disclose any information to law enforcement agencies if we suspect there has been any unauthorised use, misuse or fraud in connection with your Card.</div></div>
+<h3 id="s1-7"><span class="n">7.</span>Lost or stolen Cards and unauthorised use of Cards</h3>
+<div class="cl l2" id="s1-7.1"><span class="n">7.1</span><div>If you are a UK Customer and believe a Card has been lost or stolen or used without your authorisation you must notify us immediately via the Equals Money Platform, over the phone or by email.</div></div>
+<div class="cl l2" id="s1-7.2"><span class="n">7.2</span><div>If you are a EEA Customer and believe a Card has been lost or stolen or used without your authorisation you must call Card Stop immediately on + 32 78 170 170 (free of charge) or you call us immediately on +32 80 013 526 during Business Hours so that we can cancel the Card. Alternatively, you can mark the Card as lost or stolen via the Equals Money Platform, the Website or by email. Alternative local phone numbers can be found at our Website equalsmoney.com/en-be. You must cooperate with us in investigating any claims in connection with the loss or misuse of a Card.</div></div>
+<div class="cl l2" id="s1-7.3"><span class="n">7.3</span><div>If you suspect that someone that is not authorised to do so knows any of your Card Details or Security Credentials relating to a Card, stop using the Card and contact us immediately via the Equals Money Platform, over the phone or by email.</div></div>
+<h3 id="s1-8"><span class="n">8.</span>Liability</h3>
+<div class="cl l2" id="s1-8.1"><span class="n">8.1</span><div>Without limiting any clause of the Terms, you will be liable for all unauthorised transactions where you have contributed to the loss by:</div></div>
+<div class="cl l3" id="s1-8.1.1"><span class="n">8.1.1</span><div>breaching or compromising the security of your Security Credentials; or</div></div>
+<div class="cl l3" id="s1-8.1.2"><span class="n">8.1.2</span><div>delaying the reporting of the loss, theft or misuse of your Card, Card Details or Security Credentials.</div></div>
+<div class="cl l2" id="s1-8.2"><span class="n">8.2</span><div>For the avoidance of doubt, we do not accept any liability where you have acted fraudulently or with gross negligence in losing your Card, Card Details or Security Credentials or where you fail to notify us of the loss, theft or misuse as soon as you become aware of it.</div></div>
+<h3 id="s1-9"><span class="n">9.</span>Chargebacks</h3>
+<div class="cl l2" id="s1-9.1"><span class="n">9.1</span><div>We may be entitled to seek to reverse (chargeback) Card Transactions where you have a dispute with the merchant that supplied the goods or services.</div></div>
+<div class="cl l2" id="s1-9.2"><span class="n">9.2</span><div>To avoid losing any rights you may have to dispute such a Card Transaction, you should:</div></div>
+<div class="cl l3" id="s1-9.2.1"><span class="n">9.2.1</span><div>tell us as soon as possible after the date of the Card Transaction via the Equals Money Platform, over the phone or by email; and</div></div>
+<div class="cl l3" id="s1-9.2.2"><span class="n">9.2.2</span><div>provide us with any information we ask for to support your request via the Equals Money Platform, over the phone or by email.</div></div>
+<div class="cl l2" id="s1-9.3"><span class="n">9.3</span><div>If we are satisfied after investigation that you are entitled to reverse a transaction in accordance with Network Rules, the amount initially debited for the transaction will be credited to the Funding Account.</div></div>
+<h3 id="s1-10"><span class="n">10.</span>Expense management and bill payments</h3>
+<div class="cl l2" id="s1-10.1"><span class="n">10.1</span><div>You may assign permissions to Authorised Users to:</div></div>
+<div class="cl l3" id="s1-10.1.1"><span class="n">10.1.1</span><div>review and approve Card Transactions made by Cardholders; and/or</div></div>
+<div class="cl l3" id="s1-10.1.2"><span class="n">10.1.2</span><div>review and approve invoices relating to the Card Service.</div></div>
+<h3 id="s1-11"><span class="n">11.</span>Definitions</h3>
+<div class="cl l2" id="s1-11.1"><span class="n">11.1</span><div>In these Card Service Terms, the following definitions apply:</div></div>
+<div class="defs">
+<div class="def"><div class="term"><p><strong>“Additional Cardholder”</strong></p></div><div class="meaning"><p>means a person to whom we have issued a Card to access the balance of your Payment Account at your request.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card</strong>"</p></div><div class="meaning"><p>means Mastercard- or Visa-branded cards issued to you in accordance with these Card Service Terms.</p></div></div>
+<div class="def"><div class="term"><p><strong>“Card Details”</strong></p></div><div class="meaning"><p>means the 16-digit account number, expiry date and (CVV/CVV2) code of a Card.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card Stop</strong>"</p></div><div class="meaning"><p>means the central service provided in Belgium for blocking payment cards and other payment products.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Card Transaction</strong>"</p></div><div class="meaning"><p>means the purchase of goods or services using a Card.</p></div></div>
+<div class="def"><div class="term"><p><strong>“Funding Account”</strong></p></div><div class="meaning"><p>has the meaning given in section 3.1 of these Card Service Terms.</p></div></div>
+<div class="def"><div class="term"><p><strong>“Physical Card”</strong></p></div><div class="meaning"><p>has the meaning given in section 2.1 of these Card Service Terms.</p></div></div>
+<div class="def"><div class="term"><p><strong>“Virtual Card”</strong></p></div><div class="meaning"><p>has the meaning given in section 2.1 of these Card Service Terms.</p></div></div>
+</div>
+<h2 class="part" id="schedule-2"><span>SCHEDULE 2</span>FX SERVICE TERMS</h2>
+<h3 id="s2-1"><span class="n">1.</span>Introduction</h3>
+<div class="cl l2" id="s2-1.1"><span class="n">1.1</span><div>If you are a UK Customer, the Service Provider is Equals Money PLC.</div></div>
+<div class="cl l2" id="s2-1.2"><span class="n">1.2</span><div>If you are an EEA Customer, the Service Provider is Equals Money Europe SA.</div></div>
+<div class="cl l2" id="s2-1.3"><span class="n">1.3</span><div>Where we agree to provide the FX Service to you, the following terms (the "<strong>FX Service Terms</strong>") will apply in addition to the Terms.</div></div>
+<div class="cl l2" id="s2-1.4"><span class="n">1.4</span><div>You agree to pay the Fees and Charges applicable to the FX Service.</div></div>
+<div class="cl l2" id="s2-1.5"><span class="n">1.5</span><div>Unless otherwise defined in section 12 of this Service Schedule, all capitalised terms have the meanings given in section 2 of the Terms.</div></div>
+<div class="cl l2" id="s2-1.6"><span class="n">1.6</span><div>By using the FX Service, you accept and agree to these FX Service Terms.</div></div>
+<h3 id="s2-2"><span class="n">2.</span>The FX Service</h3>
+<div class="cl l2" id="s2-2.1"><span class="n">2.1</span><div>Service Provider shall provide you with the following services in accordance with the Terms and these FX Service Terms:</div></div>
+<div class="cl l3" id="s2-2.1.1"><span class="n">2.1.1</span><div>"<strong>FX Conversion</strong>" being an agreement between you and us for the exchange of one Supported Currency for another Supported Currency at the agreed FX Exchange Rate that will settle in the Trading Period; and</div></div>
+<div class="cl l3" id="s2-2.1.2"><span class="n">2.1.2</span><div>"<strong>FX Forward</strong>" being any agreement between you and us for the exchange of one Supported Currency for another Supported Currency at the agreed FX Exchange Rate that will settle at a date that is later than the Trading Period.</div></div>
+<div class="cl l2" id="s2-2.2"><span class="n">2.2</span><div>The FX Service is not regulated by the FCA or NBB and is not protected by any compensation scheme.</div></div>
+<div class="cl l2" id="s2-2.3"><span class="n">2.3</span><div>We will not provide investment advice or personal recommendations in relation to FX Transactions.</div></div>
+<div class="cl l2" id="s2-2.4"><span class="n">2.4</span><div>We will act as principal in relation to the FX Service. We will not act as your agent in relation to FX Transactions.</div></div>
+<div class="cl l2" id="s2-2.5"><span class="n">2.5</span><div>You are responsible for obtaining any legal, accounting, financial or tax advice you may require in relation to the FX Service and its suitability for your needs.</div></div>
+<div class="cl l2" id="s2-2.6"><span class="n">2.6</span><div>To the extent permitted by Applicable Laws, we do not owe you any fiduciary duty or any similar obligation in respect of the FX Service.</div></div>
+<h3 id="s2-3"><span class="n">3.</span>FX Forwards</h3>
+<div class="cl l2" id="s2-3.1"><span class="n">3.1</span><div>We do not provide a currency trading service. You acknowledge and agree that you may only enter into FX Forwards for the purpose of facilitating payment for identifiable goods or services. If we reasonably believe that you intend to enter into FX Forwards for other purposes (including but not limited to engaging in currency trading), we:</div></div>
+<div class="cl l3" id="s2-3.1.1"><span class="n">3.1.1</span><div>may refuse an FX Order relating to an FX Forward; or</div></div>
+<div class="cl l3" id="s2-3.1.2"><span class="n">3.1.2</span><div>if we have already accepted your FX Order, we may cancel the FX Forward.</div></div>
+<div class="cl l2" id="s2-3.2"><span class="n">3.2</span><div>You represent and warrant at the Commencement Date and on an ongoing basis that you are a non-financial counterparty for the purposes of EMIR.</div></div>
+<h3 id="s2-4"><span class="n">4.</span>Placing an FX Order with us</h3>
+<div class="cl l2" id="s2-4.1"><span class="n">4.1</span><div><strong>Order requests</strong>. You may place a request for an FX Order (an "<strong>Order Request</strong>") via the Equals Money Platform by taking the steps and providing the information as prompted.</div></div>
+<div class="cl l2" id="s2-4.2"><span class="n">4.2</span><div>We reserve the right to refuse an Order Request for any reason. We may, without limitation, refuse an Order Request if you:</div></div>
+<div class="cl l3" id="s2-4.2.1"><span class="n">4.2.1</span><div>have violated the Terms or these FX Service Terms;</div></div>
+<div class="cl l3" id="s2-4.2.2"><span class="n">4.2.2</span><div>have insufficient funds in your Payment Account to pay for an FX Order; or</div></div>
+<div class="cl l3" id="s2-4.2.3"><span class="n">4.2.3</span><div>fail to pay an amount you owe to us in accordance with these Terms when such amount became due.</div></div>
+<div class="cl l2" id="s2-4.3"><span class="n">4.3</span><div>We are not required to notify you of our reasons for refusing an Order Request, but may choose to do so unless prevented by Applicable Laws.</div></div>
+<div class="cl l2" id="s2-4.4"><span class="n">4.4</span><div><strong>FX Exchange Rates</strong>. The indicative FX Exchange Rate will be communicated to you via the Equals Money Platform and will be available for immediate execution only. The indicative FX Exchange Rate may quickly change due to fluctuations in the foreign exchange market and we have no obligation to make such exchange rate available to you on a continuing basis.</div></div>
+<div class="cl l2" id="s2-4.5"><span class="n">4.5</span><div>You acknowledge and agree that the final FX Exchange Rate in the Quote we give you in accordance with section 4.7 may therefore differ from the indicative FX Exchange Rate due to market fluctuations and other factors which are outside our control.</div></div>
+<div class="cl l2" id="s2-4.6"><span class="n">4.6</span><div>We shall set out the final FX Exchange Rate for each requested FX Order in the Quote.</div></div>
+<div class="cl l2" id="s2-4.7"><span class="n">4.7</span><div><strong>Quotes</strong>. If we accept your Order Request, we will provide you with a quote ("<strong>Quote</strong>") which will include:</div></div>
+<div class="cl l3" id="s2-4.7.1"><span class="n">4.7.1</span><div>the final FX Exchange Rate for the exchange of Supported Currencies;</div></div>
+<div class="cl l3" id="s2-4.7.2"><span class="n">4.7.2</span><div>the amount in the relevant Supported Currency you will be required to pay us for the FX Transaction including any fees and charges (the "<strong>Settlement Amount</strong>");</div></div>
+<div class="cl l3" id="s2-4.7.3"><span class="n">4.7.3</span><div>the date on which you must pay us the Settlement Amount (the "<strong>Settlement Date</strong>");</div></div>
+<div class="cl l3" id="s2-4.7.4"><span class="n">4.7.4</span><div>the amount in the relevant Supported Currency we will pay to you for the FX Transaction (the "<strong>Delivery Amount</strong>"); and</div></div>
+<div class="cl l3" id="s2-4.7.5"><span class="n">4.7.5</span><div>the date on which we will pay you the Delivery Amount (the "<strong>Delivery Date</strong>").</div></div>
+<div class="cl l2" id="s2-4.8"><span class="n">4.8</span><div><strong>Confirming an FX Order</strong>. If you accept a Quote, you are agreeing to place an FX Order and enter into an FX Transaction with us.</div></div>
+<div class="cl l2" id="s2-4.9"><span class="n">4.9</span><div>You may not cancel an FX Order once you have accepted a Quote.</div></div>
+<div class="cl l2" id="s2-4.10"><span class="n">4.10</span><div>An FX Order is legally binding on you and we shall have no responsibility for any error or inaccuracy in your Order Request (e.g. if you have inputted the wrong amount or Supported Currency).</div></div>
+<div class="cl l2" id="s2-4.11"><span class="n">4.11</span><div>You may request that we amend or cancel an FX Order if it has not been executed. We may, in our absolute discretion, amend or cancel an FX Order but we have no obligation to do so.</div></div>
+<div class="cl l2" id="s2-4.12"><span class="n">4.12</span><div>If you submit an FX Order after 5pm on a Business Day or on a day that is not a Business Day (e.g., a weekend or bank holiday), your FX Order will be deemed to be received on the next Business Day.</div></div>
+<div class="cl l2" id="s2-4.13"><span class="n">4.13</span><div>FX Orders for FX Transactions that are to be executed at a future date will be deemed to be received on the date on which you wish the FX Transaction to be made.</div></div>
+<h3 id="s2-5"><span class="n">5.</span>Execution of FX Orders</h3>
+<div class="cl l2" id="s2-5.1"><span class="n">5.1</span><div>It may not always be possible for us to execute your FX Order. You acknowledge and agree that we shall be under no obligation to execute your FX Order.</div></div>
+<div class="cl l2" id="s2-5.2"><span class="n">5.2</span><div>We may not execute your FX Order for, among others, the following reasons:</div></div>
+<div class="cl l3" id="s2-5.2.1"><span class="n">5.2.1</span><div>there is a lack of liquidity in the market for the relevant Supported Currency;</div></div>
+<div class="cl l3" id="s2-5.2.2"><span class="n">5.2.2</span><div>there is market disruption;</div></div>
+<div class="cl l3" id="s2-5.2.3"><span class="n">5.2.3</span><div>Applicable Laws would, in our reasonable opinion, prevent us from executing the FX Order; or</div></div>
+<div class="cl l3" id="s2-5.2.4"><span class="n">5.2.4</span><div>where required by any Regulatory Authority or, our commercial partners or our service providers including, but not limited to, payments or banking services providers.</div></div>
+<div class="cl l2" id="s2-5.3"><span class="n">5.3</span><div>We shall not be liable to you where we have declined an FX Order or have been unable to execute an FX Order.</div></div>
+<h3 id="s2-6"><span class="n">6.</span>Confirmations</h3>
+<div class="cl l2" id="s2-6.1"><span class="n">6.1</span><div>Following the execution of an FX Transaction, we will provide key details of the FX Transaction (a "<strong>Confirmation</strong>") via the Equals Money Platform.</div></div>
+<div class="cl l2" id="s2-6.2"><span class="n">6.2</span><div>The issuance of a Confirmation means that the FX Transaction can no longer be cancelled.</div></div>
+<h3 id="s2-7"><span class="n">7.</span>Settlement of FX Transactions</h3>
+<div class="cl l2" id="s2-7.1"><span class="n">7.1</span><div>You shall pay us the Settlement Amount and any fees and charges on the Settlement Date.</div></div>
+<div class="cl l2" id="s2-7.2"><span class="n">7.2</span><div>You agree that we may debit the Settlement Amount from your Payment Account on the Settlement Date without further reference to you.</div></div>
+<div class="cl l2" id="s2-7.3"><span class="n">7.3</span><div>We shall pay the Delivery Amount to you in the relevant Supported Currency on the Delivery Date.</div></div>
+<div class="cl l2" id="s2-7.4"><span class="n">7.4</span><div>We shall credit the Delivery Amount to your Payment Account in accordance with your instructions.</div></div>
+<div class="cl l2" id="s2-7.5"><span class="n">7.5</span><div>If you have instructed us to fund a payment to a third party with the amount we owe to you in relation to an FX Transaction, such payment will be executed in accordance with the Terms.</div></div>
+<h3 id="s2-8"><span class="n">8.</span>Netting of payment obligations</h3>
+<p class="cont">We may offset any amount we owe you against any amount you owe to us. This may reduce the Delivery Amount we are required to make to you on certain Delivery Dates.</p>
+<h3 id="s2-9"><span class="n">9.</span>Termination of FX Transactions</h3>
+<div class="cl l2" id="s2-9.1"><span class="n">9.1</span><div>If you wish to terminate an FX Transaction prior to the Settlement Date, you may request a quote for this (a "<strong>Termination Quote</strong>") via the Equals Money Platform.</div></div>
+<div class="cl l2" id="s2-9.2"><span class="n">9.2</span><div>The Termination Quote will include our charge for early termination (the "<strong>Early Exit Charge</strong>").</div></div>
+<div class="cl l2" id="s2-9.3"><span class="n">9.3</span><div>We shall have no obligation to provide a Termination Quote and may refuse to do so in our absolute discretion.</div></div>
+<div class="cl l2" id="s2-9.4"><span class="n">9.4</span><div>If we agree to provide a Termination Quote, it will be available for immediate execution only. We have no obligation to make the terms of such Termination Quote or the specified Early Exit Charge available to you on a continuing basis.</div></div>
+<div class="cl l2" id="s2-9.5"><span class="n">9.5</span><div>We will calculate the Early Exit Charge on the basis of various factors including market conditions and any costs we have incurred such as the costs of hedging the FX Transaction. The Early Exit Charge may therefore be a significant amount and we are unable to predict what it might be at any particular time.</div></div>
+<div class="cl l2" id="s2-9.6"><span class="n">9.6</span><div>When you pay an Early Exit Charge, this will discharge your obligations in relation to the relevant FX Transaction.</div></div>
+<h3 id="s2-10"><span class="n">10.</span>Margin</h3>
+<div class="cl l2" id="s2-10.1"><span class="n">10.1</span><div>We may require you to pay funds to us as security before executing your FX Order ("<strong>Margin</strong>").</div></div>
+<div class="cl l2" id="s2-10.2"><span class="n">10.2</span><div>We may also require you to increase the amount of Margin after the FX Order (a "<strong>Margin Call</strong>") during the term of the FX Transaction.</div></div>
+<div class="cl l2" id="s2-10.3"><span class="n">10.3</span><div>You must meet any such Margin or Margin Call within 24 hours of a request for Margin or Margin Call in accordance with section 10.1or 10.2 or we may cancel your FX Order or FX Transaction (as applicable).</div></div>
+<div class="cl l2" id="s2-10.4"><span class="n">10.4</span><div>Any such Margin or Margin Call shall be for the purpose of securing all your actual or contingent, prospective, present or future obligations to us under these Terms.</div></div>
+<div class="cl l2" id="s2-10.5"><span class="n">10.5</span><div>We shall acquire full ownership of any amount paid to us as Margin and shall deal with such funds as our own.</div></div>
+<div class="cl l2" id="s2-10.6"><span class="n">10.6</span><div>We will owe you a debt equal to the amount of any Margin received by us. We shall pay to you all or part of any amount of this debt to the extent that we consider, in our discretion, that the amount of Margin you have paid exceeds the amount required by us to secure or cover all your obligations under these Terms.</div></div>
+<div class="cl l2" id="s2-10.7"><span class="n">10.7</span><div>Margin held by us is <u>not</u> treated as electronic money and is not safeguarded. In the event of our insolvency, you will rank as a general creditor of ours in relation to any such Margin paid to us.</div></div>
+<h3 id="s2-11"><span class="n">11.</span>Risks</h3>
+<div class="cl l2" id="s2-11.1"><span class="n">11.1</span><div>You acknowledge that you have considered and accepted that FX Transactions carry risks, including, but not limited to:</div></div>
+<div class="cl l3" id="s2-11.1.1"><span class="n">11.1.1</span><div><strong>Credit risk</strong>. FX Transactions are entered into between you and us on a principal-to-principal basis. You are therefore exposed to the risk that we fail to perform our obligations to you under these FX Service Terms.</div></div>
+<div class="cl l3" id="s2-11.1.2"><span class="n">11.1.2</span><div><strong>Market risk</strong>. Foreign exchange rates fluctuate due to market volatility and other factors including economic and political events. Such fluctuations could affect the value of FX Transactions.</div></div>
+<div class="cl l3" id="s2-11.1.3"><span class="n">11.1.3</span><div><strong>Liquidity risk</strong>. Supported Currencies may be or become illiquid. This could affect the execution or settlement of FX Transactions. You must therefore be prepared to remain in an FX Transaction until it has settled as you may not be able to exit an FX Transaction early.</div></div>
+<h3 id="s2-12"><span class="n">12.</span>Definitions</h3>
+<p class="lead">In these FX Service Terms, the following definitions apply:</p>
+<div class="defs">
+<div class="def"><div class="term"><p>"<strong>Confirmation</strong>"</p></div><div class="meaning"><p>has the meaning given in section 6.1 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Delivery Amount</strong>"</p></div><div class="meaning"><p>has the meaning given in section 4.7.4 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Delivery Date</strong>"</p></div><div class="meaning"><p>has the meaning given in section 4.7.5 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Early Exit Charge</strong>"</p></div><div class="meaning"><p>has the meaning given in section 9.2 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>EMIR</strong>"</p></div><div class="meaning"><p>means:</p><p class="sub">(a) Regulation (EU) No 648/2012 on OTC derivatives, central counterparties and trade repositories, if you are an EEA Customer; and</p><p class="sub">(b) the UK version of Regulation (EU) No 648/2012 on OTC derivatives, central counterparties and trade repositories which is part of UK law by virtue of the European Union (Withdrawal) Act 2018, if you are a UK Customer.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Conversion</strong>"</p></div><div class="meaning"><p>has the meaning given in section 2.1.1 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Exchange Rate</strong>"</p></div><div class="meaning"><p>means the exchange rate that we offer through the Equals Money Platform at the relevant time for an exchange of the relevant pair of Supported Currencies.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Forward</strong>"</p></div><div class="meaning"><p>has the meaning given in section 2.1.2 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Order</strong>"</p></div><div class="meaning"><p>means an instruction from you for us to provide an FX Conversion or FX Forward.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>FX Transaction</strong>"</p></div><div class="meaning"><p>means an FX Conversion or an FX Forward.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Margin</strong>"</p></div><div class="meaning"><p>has the meaning given in section 10.1 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Margin Call</strong>"</p></div><div class="meaning"><p>has the meaning given in section 10.2 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Order Date</strong>"</p></div><div class="meaning"><p>means, in respect of each FX Order, the date that you confirm an FX Order with us in accordance with section 4.8 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Order Request</strong>"</p></div><div class="meaning"><p>has the meaning given in section 4.1 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Quote</strong>"</p></div><div class="meaning"><p>has the meaning given in section 4.7 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Settlement Amount</strong>"</p></div><div class="meaning"><p>has the meaning given in section 4.7.2 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Settlement Date</strong>"</p></div><div class="meaning"><p>has the meaning given in section 4.7.3 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Termination Quote</strong>"</p></div><div class="meaning"><p>has the meaning given in section 9.1 of these FX Service Terms.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Trading Day</strong>"</p></div><div class="meaning"><p>means a day of normal trading in the jurisdictions of both the currencies which are the subject of the FX Transaction.</p></div></div>
+<div class="def"><div class="term"><p>"<strong>Trading Period</strong>"</p></div><div class="meaning"><p>means the longer of:</p><p class="sub">(a) two Trading Days from the Order Date; or</p><p class="sub">(b) such longer period from the Order Date that is generally accepted in the market for an exchange of the Supported Currencies to which the FX Conversion relates.</p></div></div>
+</div>
+</article>
+</main>
+
+<div class="footer">
+  <div class="footer-row">
+    <img src="assets/asset00.png" alt="re:verse" class="footer-logo">
+    <div class="footer-links">
+      <a href="mailto:hello@revrs.ai">hello@revrs.ai</a>
+    </div>
+    <div class="footer-copy">© 2026 re:verse · Private beta</div>
+  </div>
+  <div class="footer-legal" id="footer-legal">
+    <div class="eyebrow">Regulatory disclosure</div>
+    <div class="footer-legal-cols">
+<p>re:verse is a product of TARAKA HOLDING LTD, Cyprus, reg. no. HE 447833. TARAKA HOLDING LTD is not a bank, e-money institution or crypto-asset service provider. Payment and crypto-asset services are provided by licensed partners. <a href="/legal">Legal notice</a> · <a href="/terms">Terms and Conditions</a> · <a href="/cookies">Cookies Policy</a></p>
+<p>For users in the European Economic Area, payment services are provided by Equals Money Europe SA, authorised by the National Bank of Belgium.</p>
+<p>For users with a UK market account, payment services are provided by Equals Money Plc. Equals Money Plc is authorised as a Payment Institution by the Financial Conduct Authority (FCA) with Firm Reference Number (FRN) 488396. Company registered in England &amp; Wales No. 05539698. Registered Office: 3rd Floor, Vintners’ Place, 68 Upper Thames St, London, EC4V 3BJ.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

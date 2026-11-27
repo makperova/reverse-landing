@@ -170,7 +170,7 @@ html.embed .doc h2,html.embed .doc h3,html.embed .doc h4{scroll-margin-top:16px}
 <tr><td>Plaid B.V. (Netherlands)</td><td>Connecting your accounts at other banks to the App</td><td>Payment institution authorised by De Nederlandsche Bank (licence number R179714)</td></tr>
 </tbody>
 </table></div>
-<p>When you accept these Terms, you also accept the Partner Terms of Equals <mark>[link]</mark> and ZBX <mark>[link]</mark>, which form part of your agreement. Each partner is responsible for the regulated services it provides under its Partner Terms. If these Terms and the Partner Terms conflict in relation to a regulated service, the Partner Terms apply to that service.</p>
+<p>When you accept these Terms, you also accept the <a href="/equals-terms">Partner Terms of Equals</a> and ZBX <mark>[link]</mark>, which form part of your agreement. Each partner is responsible for the regulated services it provides under its Partner Terms. If these Terms and the Partner Terms conflict in relation to a regulated service, the Partner Terms apply to that service.</p>
 <p>Transak and Plaid may ask you to accept their own terms when you use their services in the App.</p>
 <p>Partners may change. We will inform you in advance of any change to the partner that holds your funds, as required by applicable law and the Partner Terms.</p>
 <h2 id="who-can-use-reverse">4. Who can use re:verse</h2>
@@ -309,5 +309,7 @@ html.embed .doc h2,html.embed .doc h3,html.embed .doc h4{scroll-margin-top:16px}
     </div>
   </div>
 </div>
+<script>/* embed: ссылки на партнёрские условия открываются тоже в embed-режиме */
+if (document.documentElement.classList.contains('embed')) document.querySelectorAll('a[href="/equals-terms"]').forEach(function (a) { a.href += '?embed=1'; });</script>
 </body>
 </html>
